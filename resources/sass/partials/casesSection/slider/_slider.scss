@@ -1,0 +1,49 @@
+.slider-cases {
+  max-width: 678px;
+  opacity: 0;
+  transition: opacity .3s ease-in-out;
+  &.slick-initialized {
+    opacity: 1;
+  }
+  &__item {
+    margin-bottom: 60px;
+  }
+  &__bottom {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  & .slick-slide {
+    margin: 10px;
+  }
+}
+
+.case-item {
+  padding: 30px;
+  @include borderBlueRGBA(.8);
+  @include boxShadowInset($blue);
+  border-radius: 15px;
+  &__title {
+    font-weight: 900;
+    font-size: 24px;
+    letter-spacing: 0.03em;
+    margin-bottom: 3px;
+  }
+  &__subtitle {
+    color: $darkBlue;
+    font-size: 13px;
+    font-weight: 300;
+    letter-spacing: 0.01em;
+    margin-bottom: 13px;
+  }
+  &__paragraph {
+    font-size: 16px;
+    font-weight: 300;
+    margin-bottom: 10px;
+  }
+  &__paragraph strong {
+    font-size: 18px;
+    font-weight: bold;
+  }
+}
+

@@ -1,0 +1,18 @@
+/* кастомные стили */
+@import 'customVar';
+@import "global";
+@import "partials/preloader";
+@import "partials/firstSection/header";
+@import "partials/mobileMenu/mobileMenu";
+@import "partials/directionsSection/directionsSections";
+@import "partials/advantagesSection/advantagesSection";
+@import "partials/casesSection/casesSection";
+@import "partials/mapSection/mapSection";
+@import "nj-tabs";
+
+@import "animation";
+
+@import "media/media";
+
+
+

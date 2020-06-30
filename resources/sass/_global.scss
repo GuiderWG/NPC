@@ -1,0 +1,105 @@
+* {
+  outline: none !important;
+}
+
+.btn-link-default {
+  display: inline-block;
+  font-weight: 300;
+  font-size: 18px;
+  text-decoration: none;
+  text-transform: uppercase;
+  padding: 10px 50px;
+  margin-bottom: 10px;
+  @include borderWhiteRGBA(.8);
+  border-radius: 25px;
+  @include shadowBtnLinkDefault(#00C3FF, #00C3FF);
+  transition: all .5s ease-in-out;
+  position: relative;
+  z-index: 1;
+  overflow: hidden;
+  background: transparent;
+  &_v2 {
+    @include borderBlueRGBA(.8);
+    text-transform: none;
+  }
+  &:hover {
+    transition: all .3s ease-in-out;
+    @include shadowBtnLinkDefaultHover(#00C3FF, #00C3FF);
+    text-decoration: none;
+  }
+  &:after, &:before {
+    content: '';
+    display: block;
+    position: absolute;
+    z-index: -1;
+    border-radius: 0 0 50% 50%/0 0 75% 75%;
+    @include bgBtnLinkDefault(#074167, #022031);
+    transition: all .3s ease-in-out;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    height: 0;
+    width: 100%;
+  }
+  &:hover::after {
+    transition: all .3s ease-in-out;
+    height: 160%;
+  }
+  &_v3 {
+    @include borderBlueRGBA(.8);
+    background: $lightBlue;
+    text-transform: none;
+    &:hover {
+      color: #022031;
+    }
+    &:after, &:before {
+      content: '';
+      @include bgBtnLinkDefault($white, $white);
+    }
+    &:hover::after {
+      height: 160%;
+    }
+  }
+}
+
+.section {
+  background: linear-gradient(35.99deg, rgba(0, 35, 70, 0.624) -10.74%, rgba(255, 255, 255, 0) 151.79%), #012638;
+  color: $white;
+  padding-top: 150px;
+}
+
+.title-h1 {
+  font-weight: 900;
+  font-size: 82px;
+  line-height: 88px;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+}
+
+.title-h2 {
+  font-weight: 900;
+  font-size: 54px;
+  line-height: 58px;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+}
+
+.default-list {
+  list-style: none;
+  padding-left: 20px;
+  font-size: 16px;
+  line-height: 20px;
+  font-weight: 300;
+  position: relative;
+  &::before {
+    content: '';
+    position: absolute;
+    top: 3px;
+    left: 0;
+    background: url('../img/list-icon.svg') no-repeat;
+    background-size: contain;
+    width: 16px;
+    height: 16px;
+  }
+}

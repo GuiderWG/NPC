@@ -1,0 +1,40 @@
+$white: #fff;
+$blue: #38A7C9;
+$darkBlue: #0093C0;
+$lightBlue: #0093C0;
+
+@mixin textShadow($prop) {
+  text-shadow: 0px 0px 7px $prop;
+}
+@mixin boxShadow($prop) {
+  box-shadow: 0px 0px 7px $prop;
+}
+
+@mixin boxShadowInset($prop) {
+  box-shadow: 0px 0px 7px -2px $prop, inset 0px 0px 7px -2px $prop;
+}
+
+
+@mixin boxShadowLine($prop) {
+  box-shadow: 0px 0px 7px 1px $prop;
+}
+
+@mixin borderWhiteRGBA($prop) {
+  border: 1px solid rgba(255, 255, 255, $prop);
+}
+
+@mixin borderBlueRGBA($prop) {
+  border: 1px solid rgba(7,167,216, $prop);
+}
+
+@mixin shadowBtnLinkDefault($prop, $prop2) {
+  box-shadow: 0px 0px 7px -2px $prop, inset 0px 0px 7px -2px $prop2;
+}
+
+@mixin shadowBtnLinkDefaultHover($prop, $prop2) {
+  box-shadow: 0px 0px 7px 0px $prop, inset 0px 0px 7px -2px $prop2;
+}
+
+@mixin bgBtnLinkDefault($prop, $prop2) {
+  background: linear-gradient(180deg, $prop 0%, $prop2 100%);
+}

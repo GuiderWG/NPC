@@ -1,0 +1,32 @@
+/* Кастомизация бутстрапа */
+@import 'variables';
+
+/* Выбор компонентов бутстрапа */
+@import '~bootstrap/scss/bootstrap';
+
+/* Фирменные стили поверх бутстрапа (переопределение) */
+@import 'overrides';
+
+/* FontAwesome 5 */
+@import '~@fortawesome/fontawesome-free/scss/fontawesome';
+@import '~@fortawesome/fontawesome-free/scss/solid';
+@import '~@fortawesome/fontawesome-free/scss/brands';
+@import '~@fortawesome/fontawesome-free/scss/regular';
+
+/* Fancybox 3 */
+@import '~@fancyapps/fancybox/dist/jquery.fancybox.css';
+
+/* Slick slider */
+@import '~slick-carousel/slick/slick.css';
+@import '~slick-carousel/slick/slick-theme.css';
+
+/* Fullpage.js */
+@import '~fullpage.js/dist/jquery.fullpage.css';
+
+/* Mobile menu */
+@import '~hc-offcanvas-nav/dist/hc-offcanvas-nav.css';
+
+/* Animate CSS */
+@import '~animate.css/animate.css';
+
+

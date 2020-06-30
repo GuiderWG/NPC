@@ -1,0 +1,130 @@
+@media (max-width: 991.98px) {
+  .section {
+    padding-top: 70px;
+  }
+  .title-h1 {
+    font-size: 60px;
+    line-height: 64px;
+  }
+  .preloader {
+    &__svg svg {
+      width: 250px;
+    }
+    &__text {
+      font-size: 26px;
+    }
+  }
+  .mobile-menu-btn {
+    display: block !important; }
+  .main-menu {
+    display: none;
+  }
+  .main-slider{
+    &__content {
+      margin-top: 140px;
+      height: auto;
+    }
+    &__item {
+      height: auto;
+      &_slide_1 .main-slider__active-picture {
+        max-width: 500px;
+      }
+      &_slide_2 .main-slider__active-picture {
+        max-width: 570px;
+        right: -240px;
+        bottom: 0;
+      }
+      &_slide_3 .main-slider__active-picture {
+        max-width: 650px;
+      }
+      &_slide_3 .main-slider__text-picture {
+        margin-bottom: 90px;
+      }
+      &_slide_4 .main-slider__active-picture {
+        max-width: 320px;
+        right: -67px;
+      }
+      &_slide_5 .main-slider__active-picture {
+        max-width: 525px;
+        right: -56px;
+        bottom: 70px;
+      }
+    }
+  }
+
+  .main-directions {
+    padding-top: 90px;
+    padding-bottom: 30px;
+    &__title {
+      font-size: 62px;
+      line-height: 70px;
+      max-width: 100%;
+    }
+    &__planet {
+      position: relative;
+      left: auto;
+      top: auto;
+      margin-top: 0;
+      margin-bottom: 40px;
+      width: 600px;
+      max-width: 100%;
+    }
+    &__information {
+      max-width: 100%;
+      margin-left: 0;
+    }
+  }
+  .container-cust {
+    position: relative;
+    bottom: auto;
+  }
+
+  .main-cases{
+    background-position: top right;
+    &__top {
+      margin-bottom: 40px;
+    }
+    &__active-picture {
+      display: none;
+    }
+    &__title {
+      margin-bottom: 7px;
+    }
+    &__subtitle {
+      font-size: 16px;
+      max-width: 600px;
+    }
+  }
+
+  .slider-cases{
+    &__item{
+      margin-bottom: 30px;
+    }
+    & .slick-slide {
+      margin: 8px;
+    }
+  }
+  .case-item {
+    padding: 20px;
+  }
+
+  .main-territory {
+    padding-bottom: 60px;
+    &__top {
+      margin-bottom: 20px;
+    }
+    &__map {
+      padding-left: 0;
+      position: relative;
+      bottom: auto;
+      left: auto;
+    }
+  }
+
+  .map-cities {
+    &__svg {
+      max-width: 100%;
+    }
+  }
+
+}

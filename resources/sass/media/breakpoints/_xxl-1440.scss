@@ -1,0 +1,105 @@
+@media (max-width: 1439.98px) {
+  .main-slider {
+    &__item {
+      &_slide_1 .main-slider__active-picture {
+        max-width: 700px;
+      }
+      &_slide_2 .main-slider__active-picture {
+        max-width: 700px;
+        right: -167px;
+        bottom: 134px;
+      }
+      &_slide_3 .main-slider__active-picture {
+        max-width: 900px;
+        left: 0;
+      }
+      &_slide_3 .main-slider__text-picture {
+        margin-bottom: 90px;
+      }
+      &_slide_4 .main-slider__active-picture {
+        max-width: 460px;
+        right: -67px;
+      }
+      &_slide_4 .main-slider__text-picture {
+        position: relative;
+      }
+      &_slide_5 .main-slider__active-picture {
+        max-width: 700px;
+        right: -30px;
+      }
+    }
+  }
+
+  .main-directions {
+    &__planet {
+      margin-top: -278px;
+      left: 4%;
+      width: 675px;
+      max-width: 53%;
+    }
+  }
+
+  .direct-planet {
+    &__item_4 {
+      left: 30px;
+      top: 250px;
+    }
+  }
+
+  .item-planet {
+    width: 70px;
+    height: 70px;
+    &:hover, &.nj-tabs__title_active {
+      width: 75px;
+      height: 75px;
+    }
+  }
+
+  .main-cases {
+    &__active-picture {
+      bottom: -11px;
+      max-width: 500px;
+    }
+  }
+
+  .map-cities {
+    &__svg {
+      max-width: 1050px;
+    }
+    &__popup {
+      top: -75px;
+    }
+  }
+
+  .popup-cities {
+    &__header {
+      padding: 15px 45px 15px 15px;
+    }
+    &__title {
+      font-size: 22px;
+      line-height: 26px;
+    }
+    &__close {
+      width: 22px;
+      height: 18px;
+      top: 22px;
+    }
+    &__body {
+      padding: 15px;
+    }
+    &__btn {
+      padding: 6px 50px;
+      margin-bottom: 0;
+      font-size: 16px;
+    }
+  }
+  .company-b {
+    &__title {
+      font-size: 16px;
+      margin-bottom: 6px;
+    }
+    &__li {
+      font-size: 14px;
+    }
+  }
+}

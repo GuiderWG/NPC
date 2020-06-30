@@ -1,0 +1,118 @@
+@media (max-width: 1199.98px) {
+  .title-h2 {
+    font-size: 42px;
+    line-height: 48px;
+  }
+  .main-slider {
+    &__active-picture {
+      opacity: .5;
+    }
+  }
+
+  .main-directions {
+    padding-top: 80px;
+    padding-bottom: 230px;
+    &__planet {
+      margin-top: -222px;
+      left: 3%;
+      width: 470px;
+    }
+    &__title {
+      font-size: 80px;
+      line-height: 84px;
+      max-width: 620px;
+    }
+  }
+
+  .direct-planet {
+    &__item {
+      &_1 {
+        bottom: 110px;
+        right: 55px;
+      }
+      &_2 {
+        left: 130px;
+        bottom: -5px;
+      }
+      &_3 {
+        top: 20px;
+        right: 130px;
+      }
+      &_4 {
+        left: 20px;
+        top: 180px;
+      }
+      &_5 {
+        right: 15px;
+        top: 20px;
+      }
+    }
+  }
+
+  .item-planet {
+    width: 60px;
+    height: 60px;
+    &:hover, &.nj-tabs__title_active {
+      width: 65px;
+      height: 65px;
+    }
+  }
+
+  .main-advantages {
+    &__title {
+      margin-bottom: 25px;
+    }
+    &__part-title {
+      font-size: 32px;
+      margin-bottom: 15px;
+    }
+  }
+
+  .main-cases{
+    &__active-picture {
+      bottom: -11px;
+      max-width: 500px;
+      right: -190px;
+    }
+  }
+
+  .map-cities {
+    &__popup {
+      top: 10px;
+      max-width: 100%;
+      margin-left: 15px;
+      margin-right: 15px;
+      right: 0;
+    }
+    &__svg {
+      max-width: 100%;
+    }
+  }
+  .popup-cities {
+    &__header {
+      padding: 15px 45px 15px 30px;
+    }
+    &__title {
+      font-size: 24px;
+      line-height: 26px;
+    }
+    &__body {
+      display: flex;
+      flex-wrap: wrap;
+      margin-left: -10px;
+      margin-right: -10px;
+      padding: 20px 30px;
+    }
+    &__item {
+      flex: 0 0 30%;
+      width: 30%;
+      margin: 0 10px 5px;
+    }
+
+  }
+  .company-b {
+    &__group {
+      margin-bottom: 0;
+    }
+  }
+}

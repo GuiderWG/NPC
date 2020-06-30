@@ -1,0 +1,73 @@
+$font-family-sans-serif: 'Open Sans', sans-serif;
+
+$white: #fff !default;
+$gray-100: #f8f9fa !default;
+$gray-200: #e9ecef !default;
+$gray-300: #dee2e6 !default;
+$gray-400: #ced4da !default;
+$gray-500: #adb5bd !default;
+$gray-600: #868e96 !default;
+$gray-700: #495057 !default;
+$gray-800: #343a40 !default;
+$gray-900: #212529 !default;
+$black: #000 !default;
+
+$red: #ff0000;
+$green: #00b050;
+
+$body-bg: #fff;
+$body-color: #333;
+
+$primary: #333;
+$secondary: #f5f5f5;
+
+$enable-rounded: false;
+$enable-shadows: false;
+$enable-gradients: false;
+$enable-transitions: false;
+
+$link-color: #0090e9;
+$link-decoration: underline;
+$link-hover-color: $white;
+$link-hover-decoration: underline;
+
+$line-height-lg: 1.462;
+$line-height-sm: 1.462;
+
+$font-size-base: 1rem !default; // Assumes the browser default, typically `16px`
+$line-height-base: 1.462;
+$input-line-height: 1.5;
+
+$border-width: 1px;
+$border-color: #ccc;
+
+$h1-font-size: 24px;
+$h2-font-size: 20px;
+$h3-font-size: 16px;
+
+$dropdown-link-color: #333;
+$dropdown-link-hover-color: #000;
+$dropdown-link-hover-bg: #ffeba0;
+$dropdown-link-active-color: #ff5621;
+$dropdown-link-active-bg: $white;
+
+$text-muted: #ccc;
+
+
+$grid-breakpoints: (
+    xs: 0,
+    sm: 576px,
+    md: 768px,
+    lg: 992px,
+    xl: 1200px,
+    xxl: 1440px,
+);
+
+$container-max-widths: (
+    sm: 570px,
+    md: 720px,
+    lg: 960px,
+    xl: 1140px,
+    xxl: 1400px,
+);
+

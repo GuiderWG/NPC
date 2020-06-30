@@ -1,0 +1,243 @@
+@media (max-width: 575.98px)  {
+  .title-h2 {
+    font-size: 30px;
+    margin-bottom: 30px;
+  }
+  .preloader {
+    &__svg svg {
+      width: 220px;
+    }
+    &__text {
+      font-size: 24px;
+    }
+  }
+  .logo{
+    &__img {
+      width: 170px;
+    }
+  }
+  .main-slider {
+    &__active-picture {
+      opacity: .3;
+    }
+    &__content {
+      padding-bottom: 80px;
+    }
+    &__text-picture {
+      margin-bottom: 0;
+    }
+    &__bottom {
+      flex-direction: column;
+      align-items: center;
+      justify-content: space-between;
+    }
+    &__item {
+      &_slide_3 .main-slider__active-picture {
+        max-width: 580px;
+        left: -50px;
+        bottom: -28px;
+      }
+      &_slide_3 .main-slider__text-picture {
+        margin-bottom: 0;
+      }
+    }
+    &__nav {
+      margin-left: -65px;
+    }
+  }
+  .information-slide {
+    &__group {
+      max-width: 100%;
+    }
+    &__paragraph {
+      font-size: 16px;
+      line-height: 17px;
+      margin-bottom: 7px;
+    }
+    &__link {
+      width: 230px;
+      text-align: center;
+      margin-bottom: 30px;
+    }
+  }
+  .slider-nav {
+    width: 130px;
+    font-size: 16px;
+    padding: 5px 42px 5px 90px;
+    background: rgba(0,28,42, .8);
+    &__arrows {
+      width: 80px;
+    }
+    &__btn {
+      background-size: 21px 25px;
+    }
+  }
+  .btn-link-default {
+    font-size: 14px;
+    padding: 8px 0;
+    background: rgba(0,28,42, .8);
+    &_v2 {
+      display: block;
+      padding: 10px 0;
+      max-width: 200px;
+      text-align: center;
+      margin: 0 auto;
+      font-size: 16px;
+      background: transparent;
+    }
+    &_v3 {
+      padding: 10px 55px;
+      font-size: 15px;
+      background: $lightBlue;
+    }
+  }
+
+  .main-directions {
+    padding-top: 70px;
+    &__title {
+      text-align: left;
+      opacity: 1;
+      max-width: 250px;
+      font-size: 30px;
+      line-height: 36px;
+      margin-left: 0;
+      margin-bottom: 30px;
+    }
+    &__planet {
+      position: relative;
+      left: auto;
+      top: auto;
+      width: 100%;
+      max-width: 100%;
+      padding-left: 15px;
+      padding-right: 15px;
+      margin: 0 auto 40px;
+      z-index: 0;
+    }
+  }
+  .item-planet {
+    animation: none;
+    width: 70px;
+    height: 70px;
+    z-index: 0;
+    &:hover, &.nj-tabs__title_active {
+      width: 70px;
+      height: 70px;
+    }
+  }
+  .direct-planet {
+    &__picture {
+      position: absolute;
+      right: -230px;
+      top: 0;
+      width: 400px;
+    }
+    &__item {
+      position: relative;
+      top: auto;
+      left: auto;
+      bottom: auto;
+      right: auto;
+      margin-right: 10px;
+      margin-bottom: 10px;
+    }
+    &__group {
+      display: flex;
+      align-items: center;
+      justify-content: flex-start;
+      flex-wrap: wrap;
+      padding-right: 80px;
+    }
+  }
+
+  .information-directions {
+    padding: 20px 15px;
+    background: linear-gradient(180deg, rgba(5,53,84, 0.8) 0%, #022031 100%);
+    border-radius: 15px;
+    &__title {
+      padding-bottom: 15px;
+      font-size: 24px;
+      line-height: 28px;
+    }
+    &__text {
+      font-size: 15px;
+    }
+  }
+
+  .main-advantages {
+    overflow: hidden;
+    &__group {
+      margin-bottom: 40px;
+    }
+    &__bg {
+      position: absolute;
+      top: 0;
+      left: auto;
+      right: -150px;
+      transform: rotate(180deg);
+    }
+    &__item {
+      margin-bottom: 50px;
+    }
+    &__part-title {
+      font-size: 30px;
+      text-align: left;
+      margin-bottom: 30px;
+    }
+  }
+  .item-advantage {
+    &__number {
+      font-size: 110px;
+      line-height: 80px;
+      margin-bottom: 5px;
+      padding-bottom: 10px;
+    }
+    &__number::after {
+      display: none;
+    }
+    &__text {
+      font-size: 16px;
+      line-height: 20px;
+    }
+  }
+  .slider-partners {
+    &__item {
+      margin-bottom: 10px;
+    }
+    &__img {
+      margin: 0 auto;
+    }
+  }
+
+  .slider-cases {
+    & .slick-slide {
+      margin: 4px;
+    }
+    &__bottom {
+      padding: 0 6px;
+      flex-direction: column;
+      justify-content: center;
+    }
+    &__nav {
+      margin-bottom: 25px;
+    }
+  }
+
+  .case-item {
+    &__title {
+      font-size: 22px;
+      margin-bottom: 6px;
+    }
+  }
+
+  .main-territory {
+    &__map {
+      &_mobile{
+        padding: 0 5px;
+      }
+    }
+    &__photo {
+      margin-bottom: 40px;
+    }
+  }
+}

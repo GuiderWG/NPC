@@ -1,0 +1,11 @@
+@import 'customVar';
+
+body {
+  color: $white;
+  font-family: 'Roboto', sans-serif;
+  overflow: hidden;
+}
+
+a {
+  color: $white;
+}
