@@ -221,7 +221,7 @@ $(document).ready(() => {
   animateNumber();
 
   $('#fullpage').fullpage({
-    anchors: ['1Page', '2Page', '3Page', '4page', '5page', '6page'],
+    anchors: ['1Page', '2Page', '3Page', '4page', '5page', '6page', '7page'],
     responsiveWidth: 992,
     responsiveHeight: 920,
     verticalCentered: false,
@@ -285,7 +285,7 @@ document.addEventListener('DOMContentLoaded', () => {
               item.classList.remove('animate__bounceInRight');
               setTimeout(() => {
                 item.classList.remove('popup-cities_active');
-              }, 1000);
+              }, 100);
             }
           });
         }
@@ -345,10 +345,13 @@ document.addEventListener('DOMContentLoaded', () => {
 
         let nodeObj = document.querySelector('.nj-tabs__group');
 
-        nodeObj.scrollIntoView({
-          behavior: "smooth",
-          block:    "center"
-        });
+        if (innerWidth <= 991) {
+          nodeObj.scrollIntoView({
+            behavior: "smooth",
+            block:    "center"
+          });
+        }
+
 
         if (titleTab) {
           tab.forEach((item, idx) => {

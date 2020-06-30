@@ -81,3 +81,11 @@
   50% {
     transform: translate(-5px, 0); }
 }
+
+@keyframes arrowRight {
+  0%,
+  100% {
+    right: 20px }
+  50% {
+    right: 16px }
+}

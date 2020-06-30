@@ -1,0 +1,12 @@
+.main-press {
+  overflow: hidden;
+  &__title {
+    margin-bottom: 30px;
+    &_text_right {
+      text-align: right;
+    }
+  }
+}
+
+@import "latestNews/latestNews";
+@import "latestArticles/latestArticles";
