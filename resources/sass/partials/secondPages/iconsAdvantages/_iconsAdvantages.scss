@@ -1,0 +1,26 @@
+.icons-advantages {
+  background: #022C43;
+  padding: 60px 0 0;
+  &__item {
+    margin-bottom: 60px;
+  }
+}
+
+.item-icon {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  font-size: 18px;
+  &__img {
+    flex-shrink: 0;
+    margin-right: 15px;
+  }
+  &__title {
+    font-weight: bold;
+    margin-bottom: 20px;
+  }
+  &__text {
+    font-weight: 300;
+    line-height: 20px;
+  }
+}

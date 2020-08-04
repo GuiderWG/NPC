@@ -1,6 +1,9 @@
 .main-territory {
   overflow: hidden;
   display: none;
+  background-image: url('../../../img/section-map-bg.png');
+  background-repeat: no-repeat;
+  background-position: right bottom;
   &.fp-section {
     display: block;
   }
@@ -98,6 +101,9 @@
   &__title {
     font-weight: bold;
     font-size: 18px;
+    margin-bottom: 10px;
+  }
+  &__group {
     margin-bottom: 10px;
   }
 }

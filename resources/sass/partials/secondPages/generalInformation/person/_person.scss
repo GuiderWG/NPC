@@ -1,0 +1,55 @@
+.person {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  &__photo {
+    margin-right: 15px;
+    flex-shrink: 0;
+  }
+  &__name {
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 20px;
+    margin-bottom: 5px;
+  }
+  &__department {
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 20px;
+    margin-bottom: 10px;
+  }
+  &__phone, &__email {
+    font-weight: bold;
+    font-size: 17px;
+    display: block;
+    padding-left: 30px;
+    position: relative;
+    text-decoration: none;
+    transition: .3s;
+    &:hover {
+      text-decoration: none;
+      @include textShadow(#00C3FF);
+    }
+
+  }
+  &__phone::before, &__email::before {
+    content: '';
+    position: absolute;
+  }
+  &__phone::before {
+    background: url('../../../../../img/phone.svg') no-repeat;
+    background-size: contain;
+    width: 38px;
+    height: 36px;
+    top: -3px;
+    left: -7px;
+  }
+  &__email::before {
+    background: url('../../../../../img/email.svg') no-repeat;
+    background-size: contain;
+    width: 38px;
+    height: 32px;
+    top: -1px;
+    left: -8px;
+  }
+}

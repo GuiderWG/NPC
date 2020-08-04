@@ -24,7 +24,7 @@
     display: block;
     &::after {
       content: '';
-      opacity: 0;
+      transform: scale(0);
       height: 1px;
       width: 100%;
       position: absolute;
@@ -41,7 +41,7 @@
     }
     &:hover::after {
       content: '';
-      opacity: 1;
+      transform: scale(1);
     }
   }
   &__item_dropdown_open &__link {

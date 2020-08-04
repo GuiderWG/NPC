@@ -1,5 +1,14 @@
 @media (max-width: 1439.98px) {
+  h1 {
+    font-size: 72px !important;
+    line-height: 82px !important;
+    margin-bottom: 40px !important;
+  }
   .main-slider {
+    &__title {
+      font-size: 129px;
+      line-height: 130px;
+    }
     &__item {
       &_slide_1 .main-slider__active-picture {
         max-width: 700px;
@@ -14,7 +23,7 @@
         left: 0;
       }
       &_slide_3 .main-slider__text-picture {
-        margin-bottom: 90px;
+        margin-bottom: 70px;
       }
       &_slide_4 .main-slider__active-picture {
         max-width: 460px;
@@ -26,6 +35,10 @@
       &_slide_5 .main-slider__active-picture {
         max-width: 700px;
         right: -30px;
+      }
+      &_slide_3 .main-slider__title {
+        font-size: 70px;
+        line-height: 75px;
       }
     }
   }
@@ -100,6 +113,68 @@
     }
     &__li {
       font-size: 14px;
+    }
+  }
+
+  .latest-news {
+    &__title {
+      font-size: 24px;
+      line-height: 16px;
+    }
+    &__text {
+      font-size: 14px;
+      line-height: 16px;
+      max-height: 115px;
+    }
+  }
+
+  .latest-articles {
+    &__item {
+      padding: 0 62px 0 20px;
+      margin-bottom: 30px;
+      height: 100px;
+    }
+    &__title {
+      font-size: 17px;
+      line-height: 19px;
+    }
+  }
+
+  .current-service {
+    padding: 20px 15px;
+  }
+  .menu-services {
+    font-size: 16px;
+    line-height: 18px;
+  }
+
+  .person {
+    &__name {
+      font-size: 16px;
+      line-height: 18px;
+    }
+    &__department {
+      font-size: 14px;
+      line-height: 16px;
+    }
+    &__photo {
+      flex-shrink: 1;
+    }
+    &__phone, &__email {
+      font-size: 16px;
+      padding-left: 25px;
+    }
+    &__phone::before {
+      width: 34px;
+      height: 32px;
+      top: -3px;
+      left: -7px;
+    }
+    &__email::before {
+      width: 34px;
+      height: 28px;
+      top: -1px;
+      left: -8px;
     }
   }
 }

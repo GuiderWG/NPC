@@ -1,0 +1,10 @@
+.general-information {
+  &__text {
+    font-weight: 300;
+    line-height: 20px;
+  }
+ }
+
+@import "currentService/currentService";
+@import "person/person";
+

@@ -1,0 +1,64 @@
+.current-service {
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  padding: 25px;
+  background: radial-gradient(65.14% 84.79% at 10% 0%, #033755 0%, #012435 100%);
+  &_fixed {
+    max-width: 440px;
+    position: fixed;
+    right: 0;
+    top: 0;
+    z-index: 9;
+    transform: translate(100%, 50%);
+    transition: transform .5s ease-in-out;
+    &_show {
+      transform: translate(0%, 50%);
+    }
+  }
+  &__close {
+    background: url(../../../../../img/arrow-right.svg) no-repeat;
+    background-size: contain;
+    width: 25px;
+    height: 21px;
+    position: absolute;
+    top: 12px;
+    right: 17px;
+    cursor: pointer;
+  }
+}
+
+.menu-services {
+  list-style: none;
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 20px;
+  letter-spacing: 0.1em;
+  position: relative;
+  margin: 0 0 20px;
+  padding: 0 0 30px;
+  &::after {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    content: "";
+    width: 100%;
+    height: 1px;
+    background: #07A7D8;
+    @include boxShadowLine(#00C3FF);
+  }
+  &__item {
+    margin-bottom: 25px;
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+  &__link {
+    text-decoration: none;
+    transition: .3s;
+    opacity: 0.8;
+    &_active, &:hover {
+      color: #07A7D8;
+      text-decoration: none;
+    }
+  }
+}

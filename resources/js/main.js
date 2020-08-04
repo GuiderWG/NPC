@@ -5,7 +5,11 @@
 
     function fadeOutPreloader(el) {
       document.body.classList.remove('preloader');
-      preloaderStart.classList.add('preloader__container_hide', 'animate__animated', 'animate__fadeOutDown');
+      preloaderStart.classList.add('animate__animated', 'animate__fadeOutDown');
+      setTimeout(() => {
+        preloaderStart.classList.add('preloader__container_hide');
+      }, 1000);
+      //preloaderStart.classList.
     }
 
     // Показываем Preloader еще некоторое время после загрузки страницы
@@ -40,16 +44,27 @@
 
 $(document).ready(() => {
 
-  /* OWL APPEND TO */
-  $(window).resize(function () {
+  /* BG Menu on mobile or second pages */
+  /*$(window).resize(function () {
     let top = $('.top');
     if($(this).width() < 992 || $(this).height() < 920){
       top.addClass('top_responsive');
     } else {
       top.removeClass('top_responsive');
     }
-  }).trigger('resize');
+  }).trigger('resize');*/
+
+  $(window).scroll(function() {
+    $('.top-menu').removeClass('fixed-top');
+    let top = $('.top');
+    if ($(this).scrollTop() > 0) {
+      top.addClass('top_responsive');
+    } else {
+      top.removeClass('top_responsive');
+    }
+  }).scroll();
   /*---*/
+
 
   /* TOP MENU DROPDOWN 2LVL */
   $('.main-menu__item_dropdown').hover(

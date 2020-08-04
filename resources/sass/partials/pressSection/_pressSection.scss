@@ -1,5 +1,8 @@
 .main-press {
   overflow: hidden;
+  background-image: url('../../../img/section-press-bg.png');
+  background-repeat: no-repeat;
+  background-position: right top;
   &__title {
     margin-bottom: 30px;
     &_text_right {

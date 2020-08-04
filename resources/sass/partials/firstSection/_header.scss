@@ -1,13 +1,14 @@
 #canvas, {
   position: absolute;
-  display: block;
   top: 0;
   left: 0;
+  right: 0;
+  bottom: 0;
   z-index: 0;
 }
 
 .header {
-  position: relative;
+  position: relative !important;
   background:
       linear-gradient(180deg, #0E4055 0%, #082C40 54.17%, #041D30 100%);
   display: flex;

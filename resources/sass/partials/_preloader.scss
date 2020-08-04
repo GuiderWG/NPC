@@ -21,6 +21,7 @@ body.preloader {
     transition: .8s;
     &_hide {
       opacity: 0;
+      display: none;
     }
     &_show {
       opacity: 1;
