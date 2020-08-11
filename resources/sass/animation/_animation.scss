@@ -1,0 +1,117 @@
+@keyframes bounceArrowLeft {
+  0%,
+  50%,
+  100% {
+    background-position: center center;
+  }
+  25% {
+    background-position: 14px center; }
+  75% {
+    background-position: 8px center; }
+}
+
+@keyframes bounceArrowRight {
+  0%,
+  50%,
+  100% {
+    background-position: center center; }
+  25% {
+    background-position: 16px center; }
+  75% {
+    background-position: 10px center; }
+}
+
+@keyframes flow {
+  0%,
+  100% {
+    background-position: 0 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+}
+
+@-webkit-keyframes shine {
+  0%, 10% {
+    background-position: -1000px;
+  }
+  20% {
+    background-position: top left;
+  }
+  90% {
+    background-position: top right;
+  }
+  100% {
+    background-position: 1000px;
+  }
+}
+
+@keyframes load {
+  0%,
+  100% {
+    fill: #349DD9;
+    opacity: 1;
+  }
+  25%,
+  75% {
+    fill: #fff;
+    opacity: 0;
+  }
+  50% {
+    fill: #fff;
+    opacity: 1;
+  }
+}
+
+@keyframes scale {
+  0% {
+    transform: scale(0);
+  }
+  25% {
+    transform: scale(.2);
+  }
+  50% {
+    transform: scale(.5);
+  }
+  75% {
+    transform: scale(.7);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+@keyframes trY {
+  0%,
+  100% {
+    transform: translate(0, 0); }
+  50% {
+    transform: translate(0, -7px); }
+}
+
+@keyframes trXY {
+  0%,
+  100% {
+    transform: translate(0, 0); }
+  50% {
+    transform: translate(-5px, 0); }
+}
+
+@keyframes arrowRight {
+  0%,
+  100% {
+    right: 20px }
+  50% {
+    right: 16px }
+}
+
+@keyframes opacity {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: .5; }
+
+  100% {
+    opacity: .8;  }
+}

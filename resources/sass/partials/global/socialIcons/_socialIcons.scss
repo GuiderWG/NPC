@@ -1,0 +1,31 @@
+.cosial {
+  text-align: right;
+  &__item {
+    text-decoration: none;
+    opacity: .9;
+    transition: .3s;
+    &:hover {
+      opacity: 1;
+      text-decoration: none;
+    }
+  }
+  &__icon {
+    margin-left: 5px;
+    &_vk {
+      width: 20px;
+      height: 13px;
+    }
+    &_fb {
+      width: 12px;
+      height: 24px;
+    }
+    &_inst {
+      width: 20px;
+      height: 20px;
+    }
+    &_twit {
+      width: 20px;
+      height: 16px;
+    }
+  }
+}

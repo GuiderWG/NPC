@@ -1,0 +1,93 @@
+.fancybox {
+  &-custom-layout {
+    background: #022C43;
+  }
+  &-custom-layout.fancybox-is-open &-bg {
+    background: #012435;
+  }
+  &-custom-layout &-caption h3 {
+    color: $white;
+    font-size: 22px;
+    line-height: 24px;
+    margin-bottom: 15px;
+    font-weight: bold;
+    text-align: left;
+  }
+  &-custom-layout &-caption p {
+    color: $white;
+    font-weight: 300;
+    font-size: 16px;
+    text-align: left;
+  }
+  &-custom-layout &-thumbs {
+    background: #022C43;
+  }
+  &-thumbs__list a::before {
+    border: 5px solid #07A7D8 !important;
+  }
+  &-share__button--vk {
+    background: #4d7198;
+  }
+  &-custom-layout &-button, &-custom-layout &-button:visited, &-custom-layout &-button:link {
+    color: #fff;
+  }
+  /* Remove background from all buttons */
+  &-custom-layout &-button {
+    background: transparent;
+  }
+  /* Navigation arrows */
+  &-custom-layout &-navigation &-button div {
+    padding: 6px;
+    background: #fcfaf9;
+    border-radius: 50%;
+    transition: opacity .2s;
+    box-shadow: 0 2px 1px -1px rgba(0, 0, 0, 0.2), 0 1px 1px 0 rgba(0, 0, 0, 0.14), 0 1px 3px 0 rgba(0, 0, 0, 0.12);
+    opacity: .7;
+  }
+  &-custom-layout &-navigation &-button:not([disabled]):hover div {
+    opacity: 1;
+  }
+  &-custom-layout &-navigation &-button[disabled] {
+    color: #999;
+  }
+
+  &-custom-layout &-navigation &-button:not([disabled]) {
+    color: #333;
+  }
+}
+
+@media all and (min-width: 767.98px) {
+  .fancybox {
+    &-custom-layout &-caption {
+      background: #022C43;
+      bottom: 0;
+      left: auto;
+      padding: 30px 20px;
+      right: 44px;
+      top: 0;
+      width: 256px;
+    }
+
+    /* Remove gradient from caption*/
+    &-custom-layout &-caption::before {
+      display: none;
+    }
+    /* Adjust content area position */
+    &-custom-layout &-stage {
+      right: 300px;
+    }
+    /* Align buttons at the right side  */
+    &-custom-layout &-toolbar {
+      background: #07A7D8;
+      bottom: 0;
+      left: auto;
+      right: 0;
+      top: 0;
+      width: 44px;
+    }
+    /* Reposition right arrow */
+    &-custom-layout &-button--arrow_right {
+      right: 308px;
+    }
+  }
+}

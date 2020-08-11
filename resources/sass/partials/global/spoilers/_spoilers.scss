@@ -1,0 +1,20 @@
+.spoiler {
+  &__shift-text {
+    display: none;
+  }
+  &__btn {
+    display: inline-block;
+    text-decoration: none;
+    padding: 0;
+    color: $blue;
+    transition: .3s;
+    transform: scale(1);
+    &:hover {
+      color: $blue;
+      text-decoration: none;
+    }
+    &_hide {
+      transform: scale(0);
+    }
+  }
+}

@@ -15,7 +15,7 @@ import 'popper.js';
 import 'bootstrap';
 
 /* Fancybox */
-//require('@fancyapps/fancybox');
+require('@fancyapps/fancybox');
 
 /* Slick slider */
 require('slick-carousel');

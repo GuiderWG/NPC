@@ -1,0 +1,14 @@
+.copyright {
+  text-align: right;
+  &__text {
+    margin-bottom: 2px;
+    font-size: 13px;
+    font-weight: 300;
+  }
+  &__link {
+    color: $white;
+    &:hover {
+      text-decoration: none;
+    }
+  }
+}

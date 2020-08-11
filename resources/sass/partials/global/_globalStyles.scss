@@ -1,0 +1,49 @@
+* {
+  outline: none !important;
+}
+.main-page {
+  background: linear-gradient(166.8deg, rgba(1,34,51, 1) 10.89%, rgba(1,24,39, 1) 92.55%),
+  linear-gradient(254.36deg, rgba(56,167,201, 1) 0%, rgba(2,87,150, 1) 94.49%);
+  padding-top: 200px;
+}
+
+.section {
+  background: linear-gradient(35.99deg, rgba(0, 35, 70, 0.624) -10.74%, rgba(255, 255, 255, 0) 151.79%), #012638;
+  color: $white;
+  padding-top: 150px;
+}
+
+::-webkit-input-placeholder {
+  color: $white;
+}
+:-ms-input-placeholder {
+  color: $white;
+}
+::-moz-placeholder {
+  color: $white;
+  opacity: .7;
+}
+:-moz-placeholder {
+  color: $white;
+  opacity: .7;
+}
+
+@import "preloader/preloader";
+@import "header/header";
+@import "searh/search";
+@import "sliders/sliders";
+@import "mobileMenu/mobileMenu";
+@import "breadcrumbs/breadcrumbs";
+@import "buttons/buttons";
+@import "fancyCustom/fancyCustom";
+@import "njTabs/njTabs";
+@import "titles/titles";
+@import "socialIcons/socialIcons";
+@import "copyright/copyright";
+@import "spoilers/spoilers";
+@import "findBlock/findBlock";
+@import "lists/lists";
+@import "footer/footer";
+
+
+

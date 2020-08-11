@@ -1,0 +1,96 @@
+.popular-services {
+  background: url('../../../../img/pop-ser-bg.png') no-repeat;
+  background-size: cover;
+  padding: 60px 0;
+  &__title {
+    margin-bottom: 60px;
+  }
+  &__item {
+    margin-bottom: 70px;
+  }
+}
+
+.service {
+  display: flex;
+  justify-content: center;
+  align-items: stretch;
+  background: linear-gradient(180deg, #074167 0%, #022031 100%);
+  text-decoration: none;
+  height: 185px;
+  overflow: hidden;
+  transition: .3s;
+  color: $white;
+  &:hover {
+    text-decoration: none;
+    box-shadow: 0 0 7px -2px #00C3FF, inset 0px 0px 7px -2px #00C3FF, inset 0 0 1px 1px rgba(255, 255, 255, 0.8);
+  }
+  &__information {
+    padding: 35px 30px 0 42px;
+    position: relative;
+    flex: 0 0 60%;
+    max-width: 60%;
+    transition: .3s ease-in-out;
+  }
+  &__title {
+    font-size: 18px;
+    line-height: 20px;
+    font-weight: bold;
+  }
+  &__text {
+    opacity: 0;
+    transition: .9s;
+    font-weight: 300;
+    font-size: 16px;
+    height: 50px;
+    overflow: hidden;
+    margin-top: 5px;
+  }
+  &__bottom {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    height: 70px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 30px 0 42px;
+    background: linear-gradient(90deg, rgba(0, 195, 255, 0.10) -8.65%, rgba(0, 104, 136, 0) 90.5%, rgba(0, 15, 20, 0) 90.5%);
+  }
+  &__price {
+    font-size: 38px;
+    font-weight: 900;
+    letter-spacing: 0.03em;
+  }
+  &__btn {
+    opacity: 0;
+    text-transform: uppercase;
+    @include textShadow(#00C3FF);
+    position: absolute;
+    right: 27px;
+    top: 25px;
+    padding-right: 19px;
+    &::after {
+      content: '';
+      background: url(../../../../img/arrow-next-shine.svg) no-repeat;
+      background-size: contain;
+      width: 31px;
+      height: 28px;
+      position: absolute;
+      top: -3px;
+      right: -13px;
+    }
+  }
+  &__photo {
+    flex: 0 0 40%;
+    max-width: 40%;
+    transition: .3s ease-in-out;
+    position: relative;
+    overflow: hidden;
+  }
+  &__img {
+    max-width: 100%;
+    height: 100%;
+  }
+}

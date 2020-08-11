@@ -1,0 +1,22 @@
+.default-list {
+  list-style: none;
+  padding-left: 20px;
+  font-size: 16px;
+  line-height: 20px;
+  font-weight: 300;
+  margin-bottom: 0;
+  & li {
+    position: relative;
+    margin-bottom: 3px;
+    &::before {
+      content: '';
+      position: absolute;
+      top: 1px;
+      left: -20px;
+      background: url('../../../../img/list-icon.svg') no-repeat;
+      background-size: contain;
+      width: 16px;
+      height: 16px;
+    }
+  }
+}

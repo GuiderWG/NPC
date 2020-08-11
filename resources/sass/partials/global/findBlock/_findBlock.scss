@@ -1,0 +1,36 @@
+.find {
+  border: 1px solid #07A7D8;
+  @include boxShadowInset(#00C3FF);
+  height: 185px;
+  padding: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  &_small {
+    height: auto;
+    padding: 25px;
+  }
+  &__information {
+    &_df {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+  }
+  &__title {
+    font-weight: 900;
+    font-size: 26px;
+    letter-spacing: 0.03em;
+    margin-bottom: 20px;
+    &_margin_right {
+      margin-bottom: 0;
+      margin-right: 50px;
+    }
+  }
+  &__btn {
+    &_margin_none {
+      margin: 0;
+    }
+  }
+}

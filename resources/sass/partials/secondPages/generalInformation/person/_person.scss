@@ -26,6 +26,7 @@
     position: relative;
     text-decoration: none;
     transition: .3s;
+    color: $white;
     &:hover {
       text-decoration: none;
       @include textShadow(#00C3FF);

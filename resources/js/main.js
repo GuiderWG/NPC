@@ -44,6 +44,112 @@
 
 $(document).ready(() => {
 
+  $('[data-fancybox="documents"]').fancybox({
+    baseClass: "fancybox-custom-layout",
+    infobar: false,
+    buttons: ["close", "thumbs", "share"],
+    animationEffect: "fade",
+    transitionEffect: "fade",
+    preventCaptionOverlap: false,
+    idleTime: false,
+    arrows: false,
+    gutter: 0,
+    touch: {
+      vertical: false
+    },
+    thumbs : {
+      autoStart : true
+    },
+    share: {
+      tpl:
+          '<div class="fancybox-share">' +
+          "<h1>{{SHARE}}</h1>" +
+          "<p>" +
+          '<a class="fancybox-share__button fancybox-share__button--fb" href="https://www.facebook.com/sharer/sharer.php?u={{url}}">' +
+          '<svg viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg"><path d="m287 456v-299c0-21 6-35 35-35h38v-63c-7-1-29-3-55-3-54 0-91 33-91 94v306m143-254h-205v72h196" /></svg>' +
+          "<span>Facebook</span>" +
+          "</a>" +
+          '<a class="fancybox-share__button fancybox-share__button--tw" href="https://twitter.com/intent/tweet?url={{url}}&text={{descr}}">' +
+          '<svg viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg"><path d="m456 133c-14 7-31 11-47 13 17-10 30-27 37-46-15 10-34 16-52 20-61-62-157-7-141 75-68-3-129-35-169-85-22 37-11 86 26 109-13 0-26-4-37-9 0 39 28 72 65 80-12 3-25 4-37 2 10 33 41 57 77 57-42 30-77 38-122 34 170 111 378-32 359-208 16-11 30-25 41-42z" /></svg>' +
+          "<span>Twitter</span>" +
+          "</a>" +
+          '<a class="fancybox-share__button fancybox-share__button--vk" ' +
+          'href="https://vk.com/share.php?url={{url}}">' +
+          '<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 511.962 511.962"> <path d="M507.399,370.471c-1.376-2.304-9.888-20.8-50.848-58.816c-42.88-39.808-37.12-33.344,14.528-102.176 c31.456-41.92,44.032-67.52,40.096-78.464c-3.744-10.432-26.88-7.68-26.88-7.68l-76.928,0.448c0,0-5.696-0.768-9.952,1.76 c-4.128,2.496-6.784,8.256-6.784,8.256s-12.192,32.448-28.448,60.032c-34.272,58.208-48,61.28-53.6,57.664 c-13.024-8.416-9.76-33.856-9.76-51.904c0-56.416,8.544-79.936-16.672-86.016c-8.384-2.016-14.528-3.36-35.936-3.584 c-27.456-0.288-50.72,0.096-63.872,6.528c-8.768,4.288-15.52,13.856-11.392,14.4c5.088,0.672,16.608,3.104,22.72,11.424 c7.904,10.72,7.616,34.848,7.616,34.848s4.544,66.4-10.592,74.656c-10.4,5.664-24.64-5.888-55.2-58.72 c-15.648-27.04-27.488-56.96-27.488-56.96s-2.272-5.568-6.336-8.544c-4.928-3.616-11.84-4.768-11.84-4.768l-73.152,0.448 c0,0-10.976,0.32-15.008,5.088c-3.584,4.256-0.288,13.024-0.288,13.024s57.28,133.984,122.112,201.536 c59.488,61.92,127.008,57.856,127.008,57.856h30.592c0,0,9.248-1.024,13.952-6.112c4.352-4.672,4.192-13.44,4.192-13.44 s-0.608-41.056,18.464-47.104c18.784-5.952,42.912,39.68,68.48,57.248c19.328,13.28,34.016,10.368,34.016,10.368l68.384-0.96 C488.583,400.807,524.359,398.599,507.399,370.471z"/> </svg>' +
+          "<span>Вконтакте</span>" +
+          "</a>" +
+          "</p>" +
+          '<p><input class="fancybox-share__input" type="text" value="{{url_raw}}" /></p>' +
+          "</div>"
+    },
+    mobile: {
+      thumbs: {
+        autoStart: false,
+      },
+      buttons: ['thumbs', 'share', 'close'],
+      arrows: true,
+    },
+
+  });
+
+  let currentServiceBtn = $('.current-service-btn'),
+      currentServiceClose = $('.current-service__close'),
+      spoilerBtn = $('.spoiler__btn');
+
+  // default Spoiler
+  spoilerBtn.click(function(e) {
+    e.preventDefault();
+    $(this).prev().slideToggle().toggleClass('spoiler__shift-text_show');
+    $(this).addClass('spoiler__btn_hide');
+  });
+
+  // Right menu on Services pages
+  currentServiceBtn.click(function() {
+    $(this).next().addClass('current-service_fixed_show');
+  });
+  currentServiceClose.click(function() {
+    $(this).parent().removeClass('current-service_fixed_show');
+  });
+
+
+  // Do something when happened scroll
+  $(window).scroll(function() {
+    $('.top-menu').removeClass('fixed-top');
+    let top = $('.top'),
+        generalInformation = $('.general-information'),
+        //mainPagePadding  = parseInt($('.main-page').css("padding-top")),
+        mainPage  = $('.main-page'),
+        generalInformationTheme = $('.general-information_theme_pre-footer'),
+        currentServiceFixed = $('.current-service_fixed'),
+        ThisScrollToTop = $(this).scrollTop();
+
+    if ($(this).scrollTop() > 0) {
+      top.addClass('top_responsive');
+    } else {
+      top.removeClass('top_responsive');
+    }
+
+    if ($(window).width() > 992) {
+      if (ThisScrollToTop > (generalInformation.outerHeight() + parseInt(mainPage.css('padding-top')))
+          && ThisScrollToTop < (mainPage.outerHeight() - generalInformationTheme.outerHeight() * 2)) {
+        currentServiceBtn.addClass('current-service-btn_show');
+      } else {
+        currentServiceBtn.removeClass('current-service-btn_show');
+        currentServiceFixed.removeClass('current-service_fixed_show');
+      }
+      // if ($(this).scrollTop() > (mainPage - generalInformationTheme * 2)) {
+      //   currentServiceBtn.removeClass('current-service-btn_show');
+      //   currentServiceFixed.removeClass('current-service_fixed_show');
+      // } else {
+      //   currentServiceBtn.addClass('current-service-btn_show');
+      // }
+    } else {
+      currentServiceBtn.addClass('current-service-btn_show');
+    }
+
+  }).scroll();
+  /*---*/
+
   /* BG Menu on mobile or second pages */
   /*$(window).resize(function () {
     let top = $('.top');
@@ -53,18 +159,6 @@ $(document).ready(() => {
       top.removeClass('top_responsive');
     }
   }).trigger('resize');*/
-
-  $(window).scroll(function() {
-    $('.top-menu').removeClass('fixed-top');
-    let top = $('.top');
-    if ($(this).scrollTop() > 0) {
-      top.addClass('top_responsive');
-    } else {
-      top.removeClass('top_responsive');
-    }
-  }).scroll();
-  /*---*/
-
 
   /* TOP MENU DROPDOWN 2LVL */
   $('.main-menu__item_dropdown').hover(
@@ -124,6 +218,47 @@ $(document).ready(() => {
       });
   }
   /* END Main slick slider */
+
+  /* Slider about our partners */
+  let sliderCertificates = $('.slider-certificates');
+  if (sliderCertificates) {
+    sliderCertificates.slick({
+      slidesToShow: 6,
+      infinite: true,
+      arrows: false,
+      adaptiveHeight: true,
+      dots: true,
+      slidesToScroll: 6,
+      dotsClass: 'slider-dots',
+      autoplay: true,
+      autoplaySpeed: 5000,
+      responsive: [
+        {
+          breakpoint: 992,
+          settings: {
+            slidesToShow: 4,
+            slidesToScroll: 4,
+          }
+        },
+        {
+          breakpoint: 768,
+          settings: {
+            slidesToShow: 3,
+            slidesToScroll: 3,
+          }
+        },
+        {
+          breakpoint: 568,
+          settings: {
+            slidesToShow: 2,
+            slidesToScroll: 2,
+            rows: 2,
+          }
+        },
+      ]
+    });
+  }
+  /* END Slider about our partners */
 
   /* Slider about our partners */
   let sliderPartners = $('.slider-partners');

@@ -1,0 +1,17 @@
+.top {
+  position: fixed;
+  left: 0;
+  top: 0;
+  z-index: 10;
+  width: 100%;
+  transition: .3s;
+  padding: 40px 0 20px;
+  &_responsive {
+    top: 0;
+    padding: 10px 0;
+    background: linear-gradient(180deg, rgba(5, 53, 84, .6) 0%, rgba(2,32,49, .8) 100%);
+  }
+}
+
+@import "topMenu/topMenu";
+@import "topLogo/topLogo";

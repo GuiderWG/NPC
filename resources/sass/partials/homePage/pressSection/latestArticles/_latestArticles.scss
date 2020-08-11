@@ -1,0 +1,41 @@
+.latest-articles {
+  &__item {
+    background: rgba(2,32,49, .65);
+    margin-bottom: 32px;
+    padding: 0 100px 0 20px;
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    position: relative;
+    border-radius: 15px;
+    height: 98px;
+    overflow: hidden;
+    color: $white;
+    &::after {
+      content: '';
+      position: absolute;
+      top: 50%;
+      right: 18px;
+      margin-top: -16px;
+      background: url('../../../../../img/arrow-right.svg') no-repeat;
+      background-size: contain;
+      width: 32px;
+      height: 27px;
+      transition: .3s;
+    }
+    &:hover {
+      text-decoration: none;
+    }
+    &:hover::after {
+      animation: arrowRight .8s ease-in-out infinite;
+    }
+  }
+  &__title {
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 22px;
+  }
+  &__bottom {
+    margin-top: 40px;
+  }
+}

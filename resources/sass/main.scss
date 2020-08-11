@@ -1,22 +1,9 @@
-/* кастомные стили */
-@import 'customVar';
-@import "global";
-@import "partials/preloader";
-@import "partials/firstSection/header";
-@import "partials/mobileMenu/mobileMenu";
-@import "partials/directionsSection/directionsSections";
-@import "partials/advantagesSection/advantagesSection";
-@import "partials/casesSection/casesSection";
-@import "partials/mapSection/mapSection";
-@import "partials/pressSection/pressSection";
-@import "partials/footer/footer";
-
-@import "partials/secondPages/generalInformation/generalInformation";
-@import "partials/secondPages/iconsAdvantages/iconsAdvantages";
-
-@import "nj-tabs";
-@import "animation";
-@import "media/media";
+@import 'customVariables';
+@import "partials/global/globalStyles";
+@import "partials/homePage/homePageStyles";
+@import "partials/secondPages/secondPageStyles";
+@import "animation/animation";
+@import "mediaQueries/mediaQueries";
 
 
 

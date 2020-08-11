@@ -3,6 +3,16 @@
     font-weight: 300;
     line-height: 20px;
   }
+  &__title {
+    margin-bottom: 50px;
+  }
+  &__form {
+    margin-top: 60px;
+  }
+  &_theme_pre-footer {
+    padding: 60px 0;
+    background: #022C43;
+  }
  }
 
 @import "currentService/currentService";
