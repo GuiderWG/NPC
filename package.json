@@ -67,5 +67,7 @@
     "singleQuote": true,
     "quoteProps": "consistent"
   },
-  "dependencies": {}
+  "dependencies": {
+    "masonry-layout": "^4.2.2"
+  }
 }

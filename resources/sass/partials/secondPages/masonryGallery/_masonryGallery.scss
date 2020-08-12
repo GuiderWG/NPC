@@ -1,0 +1,16 @@
+.examples {
+  background: #022C43;
+  padding: 60px 0;
+  &__title {
+    margin-bottom: 30px;
+  }
+  &__subtitle {
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 22px;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    opacity: 0.6;
+    margin-bottom: 50px;
+  }
+}

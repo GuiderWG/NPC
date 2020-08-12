@@ -25,6 +25,10 @@ require('fullpage.js');
 
 require('hc-offcanvas-nav');
 
+/* Masonry Grid */
+import Masonry from 'masonry-layout';
+window.Masonry = Masonry;
+
 /* Parallax JS */
 import Parallax from 'parallax-js'
 window.Parallax = Parallax;

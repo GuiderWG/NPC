@@ -44,7 +44,7 @@
 })();
 
 $(document).ready(function () {
-  $('[data-fancybox="documents"]').fancybox({
+  $('[data-fancybox]').fancybox({
     baseClass: "fancybox-custom-layout",
     infobar: false,
     buttons: ["close", "thumbs", "share"],
@@ -184,8 +184,14 @@ $(document).ready(function () {
       slidesToScroll: 6,
       dotsClass: 'slider-dots',
       autoplay: true,
-      autoplaySpeed: 5000,
+      autoplaySpeed: 8000,
       responsive: [{
+        breakpoint: 1199,
+        settings: {
+          slidesToShow: 4,
+          slidesToScroll: 4
+        }
+      }, {
         breakpoint: 992,
         settings: {
           slidesToShow: 4,
@@ -201,8 +207,7 @@ $(document).ready(function () {
         breakpoint: 568,
         settings: {
           slidesToShow: 2,
-          slidesToScroll: 2,
-          rows: 2
+          slidesToScroll: 2
         }
       }]
     });

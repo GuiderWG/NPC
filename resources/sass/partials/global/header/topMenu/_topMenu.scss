@@ -81,6 +81,7 @@
     opacity: .9;
     font-size: 16px;
     position: relative;
+    color: $white;
     &:hover {
       color: $white;
       @include textShadow(#00C3FF);
