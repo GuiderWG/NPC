@@ -23,6 +23,7 @@ require('slick-carousel');
 /* Fullpage.js */
 require('fullpage.js');
 
+/* Mobile menu */
 require('hc-offcanvas-nav');
 
 /* Masonry Grid */

@@ -1,6 +1,9 @@
 .numbers-counter {
   padding: 60px 0;
   background: radial-gradient(65.14% 84.79% at 100% 100%, #033755 0%, #012435 100%);
+  &_theme_darken {
+    background: #011E2E;
+  }
   &__title {
     margin-bottom: 60px;
   }

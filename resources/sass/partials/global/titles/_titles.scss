@@ -4,6 +4,9 @@
   line-height: 88px;
   letter-spacing: 0.05em;
   text-transform: uppercase;
+  &_opacity {
+    opacity: .25;
+  }
 }
 
 .title-h2 {

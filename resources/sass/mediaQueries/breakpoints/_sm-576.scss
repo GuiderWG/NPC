@@ -7,6 +7,9 @@
   .section {
     padding-top: 50px;
   }
+  .section.header {
+    padding-top: 80px;
+  }
   .breadcrumbs {
     font-size: 14px;
   }
@@ -20,7 +23,7 @@
   }
   .preloader {
     &__svg svg {
-      width: 220px;
+      width: 180px;
     }
     &__text {
       font-size: 22px;
@@ -515,5 +518,34 @@
       height: 20px;
     }
   }
+
+  .history {
+    padding: 60px 0 170px;
+    &__title {
+      margin-bottom: 130px;
+    }
+  }
+
+  .timeline {
+    height: 1300px;
+    &::before {
+      height: 1400px;
+    }
+    &__item_pos_bottom &__information {
+      top: 30px;
+      text-align: right;
+    }
+    &__item_pos_top &__information {
+      top: 25px;
+      text-align: left;
+    }
+    .timeline__item_pos_bottom .timeline__text {
+      margin-right: 20px;
+    }
+    .timeline__item_pos_top .timeline__text {
+      margin-left: 20px;
+    }
+  }
+
 
 }

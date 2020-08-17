@@ -22,7 +22,7 @@
     //Показываем Preloader перед переходом на страницу
     const fadeInPreloader = () => {
       document.body.classList.add('preloader');
-      preloaderStart.classList.remove('animate__fadeOutDown');
+      preloaderStart.classList.remove('animate__fadeOutDown', 'preloader__container_hide');
       preloaderStart.classList.add('preloader__container_show', 'animate__backInUp');
     };
 
@@ -43,6 +43,14 @@
 })();
 
 $(document).ready(() => {
+
+  $('#request').on('show.bs.modal', function (event) {
+    let button = $(event.relatedTarget);
+    let recipient = button.data('whatever');
+    let modal = $(this);
+    modal.find('.modal-default__subtitle').text(recipient);
+    modal.find('.modal-body [data-service]').val(recipient);
+  })
 
   $('[data-fancybox]').fancybox({
     baseClass: "fancybox-custom-layout",

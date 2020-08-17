@@ -5,6 +5,7 @@
   background: linear-gradient(166.8deg, rgba(1,34,51, 1) 10.89%, rgba(1,24,39, 1) 92.55%),
   linear-gradient(254.36deg, rgba(56,167,201, 1) 0%, rgba(2,87,150, 1) 94.49%);
   padding-top: 200px;
+  min-height: 1000px;
 }
 
 .section {
@@ -45,6 +46,8 @@
 @import "lists/lists";
 @import "zoomPhoto/zoomPhoto";
 @import "footer/footer";
+@import "modals/modals";
+
 
 
 

@@ -6,50 +6,66 @@
     <title>NPC project</title>
     <meta name="description" content="">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="/css/bundle.css">
-    <link rel="stylesheet" href="/css/main.css">
-    <script src="/js/bundle.js" defer=""></script>
-    <script src="/js/main.js" defer=""></script>
+    <link rel="stylesheet" href="./css/bundle.css">
+    <link rel="stylesheet" href="./css/main.css">
+    <script src="./js/bundle.js" defer=""></script>
+    <script src="./js/main.js" defer=""></script>
     <base href="./">
 </head>
 <body>
 
 
 
+    <div id="preloader" class="preloader">
+  <div id="preloader-container" class="preloader__container">
+    <div class="preloader__svg">
+      <svg class="preloader__svg-img" viewBox="0 0 325 396" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path class="preloader__path preloader__path_el_4" fill-rule="evenodd" clip-rule="evenodd" d="M203.548 360.075L162.916 396L122.418 360.075H203.548Z" fill="#2D9CDB"></path>
+        <path class="preloader__path preloader__path_el_3" fill-rule="evenodd" clip-rule="evenodd" d="M262.05 305.502L221.176 341.718H104.766L63.8508 305.502H262.05Z" fill="#2D9CDB"></path>
+        <path class="preloader__path preloader__path_el_2" fill-rule="evenodd" clip-rule="evenodd" d="M0.916992 247.064H324.917L279.681 287.146H46.201L0.916992 247.064Z" fill="#2D9CDB"></path>
+        <path class="preloader__path preloader__path_el_2" fill-rule="evenodd" clip-rule="evenodd" d="M0.916992 246.777H324.917L279.681 286.86H46.201L0.916992 246.777Z" fill="#2D9CDB"></path>
+        <path class="preloader__path preloader__path_el_1" fill-rule="evenodd" clip-rule="evenodd" d="M0.916992 72.9714H324.313V228.708H0.916992V72.9714ZM24.2259 55.5745C39.5495 55.5745 48.2903 49.5276 48.6151 38.2737H33.2898C32.8597 43.0199 30.1597 45.0106 24.2259 45.0106C19.4789 45.0106 16.8872 42.8673 16.8872 38.2737V17.4535C16.8872 12.7061 19.5854 10.5627 24.2259 10.5627C30.0531 10.5627 32.6437 12.5534 33.0744 17.4535H48.3986C47.859 6.12406 39.4424 0 24.3353 0C9.55073 0 0.916992 6.12406 0.916992 17.4535V38.2737C0.916992 49.5276 9.55073 55.5745 24.2259 55.5745ZM85.8437 54.6558H101.707L83.5779 1.07137H67.1753L49.0463 54.6558H64.9094L67.3912 45.7761H83.3625L85.8437 54.6558ZM70.4131 35.4409L72.1388 29.3185C73.219 25.491 74.4046 18.9839 75.1612 14.6207H75.5931C76.3485 18.9839 77.6435 25.491 78.6144 29.3185L80.3401 35.4409H70.4131ZM155.135 1.07137L143.265 21.3565C141.713 24.0092 139.165 28.7057 138.3 30.6963H137.87C137.005 28.7057 134.457 24.0109 132.905 21.3565L121.035 1.07137H105.603V54.6558H120.494V41.4895C120.494 34.9744 119.739 28.4764 119.415 21.9699L119.955 21.8161L126.753 35.9011L130.531 43.1737H145.638L149.416 35.9011L156.215 21.8161L156.754 21.9699C156.321 28.4764 155.567 34.9715 155.567 41.4895V54.6558H170.567V1.07137H155.135ZM211.884 54.6558H227.747L209.617 1.07137H193.216L175.086 54.6558H190.948L193.432 45.7761H209.402L211.884 54.6558ZM196.452 35.4409L198.179 29.3185C199.259 25.491 200.447 18.9839 201.202 14.6207H201.633C202.387 18.9839 203.584 25.5224 204.654 29.3185L206.38 35.4409H196.452ZM253.55 1.07137H231.642V54.6558H246.966V37.4316H253.55C269.196 37.4316 278.477 30.6963 278.477 19.2903C278.477 7.80829 269.196 1.07137 253.55 1.07137ZM253.333 27.0981H246.966V11.406H253.333C259.484 11.406 262.723 14.0839 262.723 19.2903C262.723 24.4185 259.484 27.0981 253.333 27.0981ZM308.452 54.6558H324.315L306.185 1.07137H289.783L271.654 54.6558H287.516L289.998 45.7761H305.969L308.452 54.6558ZM293.02 35.4409L294.747 29.3185C295.826 25.491 297.012 18.9839 297.768 14.6207H298.199C298.955 18.9839 300.153 25.5316 301.222 29.3185L302.948 35.4409H293.02ZM19.3678 191.125V91.3561H39.6102V130.65H78.9769V91.3561H99.2193V191.125H78.9769V147.51H39.6102V191.125H19.3678ZM119.082 91.3561H198.514V191.125H178.272V108.216H139.324V191.125H119.082V91.3561ZM218.044 91.3561H238.286V174.265H277.235V91.3561H297.476V174.265H305.853V209.909H288.962V191.125H218.044V91.3561Z" fill="#2E9DDC"></path>
+      </svg>
+    </div>
+    <div class="preloader__bottom">
+      <div class="preloader__text">
+        <span class="preloader__text_blue">Н</span><span class="preloader__text_animate">оваторство и</span> <span class="preloader__text_blue">П</span><span class="preloader__text_animate">озитивное движение к </span><span class="preloader__text_blue">Ц</span><span class="preloader__text_animate">ели!</span></div>
+    </div>
+  </div>
+</div>
 
-<!--    <include src="general/preloader.html"></include>-->
     <div class="top">
   <div class="container">
     <div class="row align-items-center">
       <div class="col-10 col-md-5 col-lg-3">
         <a href="/" class="logo transition">
-          <img src="../images/logo.svg?6fcbd3f3ed51e311b09301f7e884dfd7" alt="" class="logo__img">
+          <img src="./images/logo.svg?6fcbd3f3ed51e311b09301f7e884dfd7" alt="" class="logo__img">
         </a>
       </div>
       <div class="col-2 col-md-7 col-lg-9">
         <nav class="main-menu">
           <ul class="main-menu__group">
             <li class="main-menu__item main-menu__item_dropdown">
-              <a href="index2.html" class="main-menu__link transition">О компании</a>
+              <a href="test-lab.html" class="main-menu__link transition">О компании</a>
               <div class="main-menu-level">
                 <ul class="main-menu-level__group">
                   <li class="main-menu-level__item">
-                    <a href="index2.html" class="main-menu-level__link transition">Наша команда</a>
+                    <a href="test-lab.html" class="main-menu-level__link transition">Наша команда</a>
                   </li>
                   <li class="main-menu-level__item">
-                    <a href="#" class="main-menu-level__link transition">Новости: компании и отрасли</a>
+                    <a href="test-lab.html" class="main-menu-level__link transition">Новости: компании и отрасли</a>
                   </li>
                   <li class="main-menu-level__item">
-                    <a href="#" class="main-menu-level__link transition">Отзывы</a>
+                    <a href="test-lab.html" class="main-menu-level__link transition">Отзывы</a>
                   </li>
                 </ul>
               </div>
             </li>
-            <li class="main-menu__item"><a href="#" class="main-menu__link transition">Услуги</a></li>
-            <li class="main-menu__item"><a href="#" class="main-menu__link">Партнеры</a></li>
-            <li class="main-menu__item"><a href="#" class="main-menu__link">Кейсы</a></li>
-            <li class="main-menu__item"><a href="#" class="main-menu__link">Статьи</a></li>
-            <li class="main-menu__item"><a href="#" class="main-menu__link">Контакты</a></li>
+            <li class="main-menu__item"><a href="test-lab.html" class="main-menu__link transition">Услуги</a></li>
+            <li class="main-menu__item"><a href="test-lab.html" class="main-menu__link">Партнеры</a></li>
+            <li class="main-menu__item"><a href="test-lab.html" class="main-menu__link">Кейсы</a></li>
+            <li class="main-menu__item"><a href="test-lab.html" class="main-menu__link">Статьи</a></li>
+            <li class="main-menu__item"><a href="test-lab.html" class="main-menu__link">Контакты</a></li>
           </ul>
         </nav>
         <a href="#menu" class="mobile-menu-btn">
@@ -61,12 +77,12 @@
 </div>
     <nav id="main-nav" class="mobile-menu">
   <ul>
-    <li class="mobile-menu__item"><a href="index2.html" class="mobile-menu__link transition">О компании</a></li>
+    <li class="mobile-menu__item"><a href="test-lab.html" class="mobile-menu__link transition">О компании</a></li>
     <li class="mobile-menu__item">
-      <a href="/" class="mobile-menu__link">Услуги</a>
+      <a href="test-lab.html" class="mobile-menu__link">Услуги</a>
       <ul>
         <li class="mobile-menu__item">
-          <a href="/" class="mobile-menu__link">Hosting</a>
+          <a href="test-lab.html" class="mobile-menu__link">Hosting</a>
           <ul>
             <li class="mobile-menu__item"><a href="/" class="mobile-menu__link">Private Server</a></li>
             <li class="mobile-menu__item"><a href="/" class="mobile-menu__link">Managed Hosting</a></li>
@@ -76,16 +92,16 @@
         <li class="mobile-menu__item"><a href="#" class="mobile-menu__link">Websites</a></li>
       </ul>
     </li>
-    <li class="mobile-menu__item"><a href="#" class="mobile-menu__link">Партнеры</a></li>
-    <li class="mobile-menu__item"><a href="#" class="mobile-menu__link">Галерея</a></li>
-    <li class="mobile-menu__item"><a href="#" class="mobile-menu__link">Статьи</a></li>
-    <li class="mobile-menu__item"><a href="#" class="mobile-menu__link">Отзывы</a></li>
-    <li class="mobile-menu__item"><a href="#" class="mobile-menu__link">Контакты</a></li>
+    <li class="mobile-menu__item"><a href="test-lab.html" class="mobile-menu__link">Партнеры</a></li>
+    <li class="mobile-menu__item"><a href="test-lab.html" class="mobile-menu__link">Галерея</a></li>
+    <li class="mobile-menu__item"><a href="test-lab.html" class="mobile-menu__link">Статьи</a></li>
+    <li class="mobile-menu__item"><a href="test-lab.html" class="mobile-menu__link">Отзывы</a></li>
+    <li class="mobile-menu__item"><a href="test-lab.html" class="mobile-menu__link">Контакты</a></li>
   </ul>
 </nav>
 
     <main class="main-page">
-        <button class="current-service-btn">Другие услуги</button>
+      <button class="current-service-btn">Другие услуги</button>
 
 <div class="current-service current-service_fixed">
   <div class="current-service__close"></div>
@@ -98,7 +114,7 @@
   </ul>
   <div class="current-service__person person">
     <div class="person__photo">
-      <img src="../images/person1.png?af084d3e2eb901bd1e0cb8888e8bf77d" alt="" class="person__img img-fluid">
+      <img src="./images/person1.png?af084d3e2eb901bd1e0cb8888e8bf77d" alt="" class="person__img img-fluid">
     </div>
     <div class="person__info">
       <div class="person__name">Добрикова Марина Александровна</div>
@@ -108,13 +124,13 @@
     </div>
   </div>
 </div>
-        <div class="container">
+      <div class="container">
   <ul class="breadcrumbs">
     <li class="breadcrumbs__item"><a href="#" class="breadcrumbs__link transition">Главная</a></li>
     <li class="breadcrumbs__item">Испытательная лабаратория</li>
   </ul>
 </div>
-        <div class="general-information">
+      <div class="general-information">
   <div class="container">
     <div class="row">
 
@@ -150,7 +166,7 @@
 
           <div class="current-service__person person">
             <div class="person__photo">
-                <img src="../images/person1.png?af084d3e2eb901bd1e0cb8888e8bf77d" alt="" class="person__img img-fluid">
+                <img src="./images/person1.png?af084d3e2eb901bd1e0cb8888e8bf77d" alt="" class="person__img img-fluid">
             </div>
             <div class="person__info">
               <div class="person__name">Добрикова Марина Александровна</div>
@@ -165,12 +181,12 @@
     </div>
   </div>
 </div>
-        <div class="icons-advantages">
+      <div class="icons-advantages">
   <div class="container">
     <div class="row">
       <div class="col-md-6 col-lg-4">
         <div class="icons-advantages__item item-icon">
-          <img src="../images/icon-1.svg?9818a603888c2166e8d5d17fbf4c380e" alt="" class="item-icon__img">
+          <img src="./images/icon-1.svg?9818a603888c2166e8d5d17fbf4c380e" alt="" class="item-icon__img">
           <div class="item-icon__information">
             <div class="item-icon__title">Решим любой вопрос</div>
             <div class="item-icon__text">Готовы разработать и провести нестандартные испытания – под любые Ваши требования</div>
@@ -179,7 +195,7 @@
       </div>
       <div class="col-md-6 col-lg-4">
         <div class="icons-advantages__item item-icon">
-          <img src="../images/icon-2.svg?be8edf8d775ff0ddd80302ee39c8a1ae" alt="" class="item-icon__img">
+          <img src="./images/icon-2.svg?be8edf8d775ff0ddd80302ee39c8a1ae" alt="" class="item-icon__img">
           <div class="item-icon__information">
             <div class="item-icon__title">Открытость испытаний</div>
             <div class="item-icon__text">Вы можете присутствовать на испытаниях во время их проведения</div>
@@ -188,7 +204,7 @@
       </div>
       <div class="col-md-6 col-lg-4">
         <div class="icons-advantages__item item-icon">
-          <img src="../images/icon-3.svg?444c69860153b018471bebee57f0f0aa" alt="" class="item-icon__img">
+          <img src="./images/icon-3.svg?444c69860153b018471bebee57f0f0aa" alt="" class="item-icon__img">
           <div class="item-icon__information">
             <div class="item-icon__title">Быстрое начало испытаний</div>
             <div class="item-icon__text">Начало работы с образцами продукции на следующий день после их получения</div>
@@ -197,7 +213,7 @@
       </div>
       <div class="col-md-6 col-lg-4">
         <div class="icons-advantages__item item-icon">
-          <img src="../images/icon-4.svg?5861b4c2dd02ec94c5f75a5cd4e17972" alt="" class="item-icon__img">
+          <img src="./images/icon-4.svg?5861b4c2dd02ec94c5f75a5cd4e17972" alt="" class="item-icon__img">
           <div class="item-icon__information">
             <div class="item-icon__title">Доступность результатов</div>
             <div class="item-icon__text">Вы можете получить от нас протоколы на любой стадии проведения испытаний</div>
@@ -206,7 +222,7 @@
       </div>
       <div class="col-md-6 col-lg-4">
         <div class="icons-advantages__item item-icon">
-          <img src="../images/icon-5.svg?2c1b7966fe6a6b3f8327efe24127170b" alt="" class="item-icon__img">
+          <img src="./images/icon-5.svg?2c1b7966fe6a6b3f8327efe24127170b" alt="" class="item-icon__img">
           <div class="item-icon__information">
             <div class="item-icon__title">Информационная поддержка</div>
             <div class="item-icon__text">Консультация, предоставление информации по запросу, помощь в формировании Технического задания для получения достоверных результатов</div>
@@ -215,7 +231,7 @@
       </div>
       <div class="col-md-6 col-lg-4">
         <div class="icons-advantages__item item-icon">
-          <img src="../images/icon-6.svg?e399c536e2bbb2440046abc69f66fc35" alt="" class="item-icon__img">
+          <img src="./images/icon-6.svg?e399c536e2bbb2440046abc69f66fc35" alt="" class="item-icon__img">
           <div class="item-icon__information">
             <div class="item-icon__title">Аккредитация ФСА и Транснефть</div>
             <div class="item-icon__text">Полная легитимность выданных документов</div>
@@ -225,7 +241,7 @@
     </div>
   </div>
 </div>
-        <div class="about-department">
+      <div class="about-department">
   <div class="container">
     <div class="about-department__spoiler spoiler">
       <div class="about-department__title title-h2">Подробнее об отделе</div>
@@ -257,16 +273,17 @@
     </div>
   </div>
 </div>
-        <div class="popular-services">
+      <div class="popular-services">
   <div class="container">
     <div class="popular-services__title title-h2">Популярные услуги</div>
     <div class="row">
       <div class="col-lg-6">
-        <a href="#" class="popular-services__item service">
-          <div class="service__photo"><img src="../images/pop-ser-1.jpg?1994413b2837c3875ff0a360aecc5015" alt="" class="service__img"></div>
+        <a href="#request" data-whatever="Определение химического состава металлов" data-toggle="modal" class="popular-services__item service">
+          <div class="service__photo"><img src="./images/pop-ser-1.jpg?1994413b2837c3875ff0a360aecc5015" alt="" class="service__img"></div>
           <div class="service__information">
             <div class="service__title">Определение химического состава металлов</div>
-            <div class="service__text">Результатом работы будет протокол фрактографического исследования с выводами.</div>
+            <div class="service__text">Результатом работы будет протокол фрактографического исследования с выводами.
+            </div>
             <div class="service__bottom">
               <div class="service__price">3 000 ₽</div>
               <div class="service__btn">Оставить заявку</div>
@@ -278,22 +295,25 @@
         <a href="#" class="popular-services__item service">
 
           <div class="service__information">
-            <div class="service__title">Измерение твердости металла НВ (HRA, HRB, HRC) </div>
-            <div class="service__text">Результатом работы будет протокол фрактографического исследования с выводами. работы будет протокол работы будет протокол</div>
+            <div class="service__title">Измерение твердости металла НВ (HRA, HRB, HRC)</div>
+            <div class="service__text">Результатом работы будет протокол фрактографического исследования с выводами.
+              работы будет протокол работы будет протокол
+            </div>
             <div class="service__bottom">
               <div class="service__price">3 000 ₽</div>
               <div class="service__btn">Оставить заявку</div>
             </div>
           </div>
-          <div class="service__photo"><img src="../images/pop-ser-2.jpg?abdd891e6d58bbd04ad30f5766ef0dfa" alt="" class="service__img"></div>
+          <div class="service__photo"><img src="./images/pop-ser-2.jpg?abdd891e6d58bbd04ad30f5766ef0dfa" alt="" class="service__img"></div>
         </a>
       </div>
       <div class="col-lg-6">
         <a href="#" class="popular-services__item service">
-          <div class="service__photo"><img src="../images/pop-ser-1.jpg?1994413b2837c3875ff0a360aecc5015" alt="" class="service__img"></div>
+          <div class="service__photo"><img src="./images/pop-ser-1.jpg?1994413b2837c3875ff0a360aecc5015" alt="" class="service__img"></div>
           <div class="service__information">
             <div class="service__title">Фрактографический анализ излома</div>
-            <div class="service__text">Результатом работы будет протокол фрактографического исследования с выводами.</div>
+            <div class="service__text">Результатом работы будет протокол фрактографического исследования с выводами.
+            </div>
             <div class="service__bottom">
               <div class="service__price">3 000 ₽</div>
               <div class="service__btn">Оставить заявку</div>
@@ -304,22 +324,24 @@
       <div class="col-lg-6">
         <a href="#" class="popular-services__item service">
           <div class="service__information">
-            <div class="service__title">Определение свойств металла при одноосном растяжении </div>
-            <div class="service__text">Результатом работы будет протокол фрактографического исследования с выводами.</div>
+            <div class="service__title">Определение свойств металла при одноосном растяжении</div>
+            <div class="service__text">Результатом работы будет протокол фрактографического исследования с выводами.
+            </div>
             <div class="service__bottom">
               <div class="service__price">3 000 ₽</div>
               <div class="service__btn">Оставить заявку</div>
             </div>
           </div>
-          <div class="service__photo"><img src="../images/pop-ser-2.jpg?abdd891e6d58bbd04ad30f5766ef0dfa" alt="" class="service__img"></div>
+          <div class="service__photo"><img src="./images/pop-ser-2.jpg?abdd891e6d58bbd04ad30f5766ef0dfa" alt="" class="service__img"></div>
         </a>
       </div>
       <div class="col-lg-6">
         <a href="#" class="popular-services__item service">
-          <div class="service__photo"><img src="../images/pop-ser-1.jpg?1994413b2837c3875ff0a360aecc5015" alt="" class="service__img"></div>
+          <div class="service__photo"><img src="./images/pop-ser-1.jpg?1994413b2837c3875ff0a360aecc5015" alt="" class="service__img"></div>
           <div class="service__information">
-            <div class="service__title">Металлография - оптическая микроскопия </div>
-            <div class="service__text">Результатом работы будет протокол фрактографического исследования с выводами.</div>
+            <div class="service__title">Металлография - оптическая микроскопия</div>
+            <div class="service__text">Результатом работы будет протокол фрактографического исследования с выводами.
+            </div>
             <div class="service__bottom">
               <div class="service__price">3 000 ₽</div>
               <div class="service__btn">Оставить заявку</div>
@@ -338,7 +360,7 @@
     </div>
   </div>
 </div>
-        <div class="necessary-services">
+      <div class="necessary-services">
   <div class="container">
     <div class="row justify-content-end">
       <div class="col-sm-7 col-xl-8">
@@ -360,16 +382,16 @@
         </div>
       </div>
       <div class="col-sm-5 col-xl-4 pl-0 pr-0 pl-sm-3 pr-sm-3">
-        <img src="../images/necessary-services-bg.jpg?ccf19a9d1d19cca1b76a3b59aee8bcdb" alt="" class="necessary-services__img necessary-services__img_last">
+        <img src="./images/necessary-services-bg.jpg?ccf19a9d1d19cca1b76a3b59aee8bcdb" alt="" class="necessary-services__img necessary-services__img_last">
       </div>
     </div>
   </div>
 </div>
-        <div class="necessary-services necessary-services_testing">
+      <div class="necessary-services necessary-services_testing">
   <div class="container">
     <div class="row justify-content-end">
       <div class="col-sm-4 col-lg-3 col-xl-3 col-xxl-2 pl-0 pr-0 pl-sm-3 pr-sm-3 d-none d-sm-block">
-        <img src="../images/testing-services-bg.jpg?cbbb7bc47222877a9042500fe6947a4e" alt="" class="necessary-services__img necessary-services__img_first">
+        <img src="./images/testing-services-bg.jpg?cbbb7bc47222877a9042500fe6947a4e" alt="" class="necessary-services__img necessary-services__img_first">
       </div>
       <div class="col-sm-8 col-lg-9 col-xl-9 col-xxl-10">
         <div class="necessary-services__group necessary-services__group_testing">
@@ -379,7 +401,7 @@
             <div class="row">
               <div class="col-md-6 col-lg-4">
                 <div class="icons-advantages__item icons-advantages__item_testing item-icon">
-                  <img src="../images/icon-testing-1.svg?3da019ed576b96d599e13281e5781937" alt="" class="item-icon__img">
+                  <img src="./images/icon-testing-1.svg?3da019ed576b96d599e13281e5781937" alt="" class="item-icon__img">
                   <div class="item-icon__information">
                     <div class="item-icon__text">Внутренние антикоррозионные покрытия всех типов</div>
                   </div>
@@ -387,7 +409,7 @@
               </div>
               <div class="col-md-6 col-lg-4">
                 <div class="icons-advantages__item icons-advantages__item_testing item-icon">
-                  <img src="../images/icon-testing-2.svg?6fe098d77a22ab859cd2d1d6d756cbf8" alt="" class="item-icon__img">
+                  <img src="./images/icon-testing-2.svg?6fe098d77a22ab859cd2d1d6d756cbf8" alt="" class="item-icon__img">
                   <div class="item-icon__information">
                     <div class="item-icon__text">Все виды наружной изоляции</div>
                   </div>
@@ -395,7 +417,7 @@
               </div>
               <div class="col-md-6 col-lg-4">
                 <div class="icons-advantages__item icons-advantages__item_testing item-icon">
-                  <img src="../images/icon-testing-3.svg?9f6138f1dbc7435358df7f1f4e104e2a" alt="" class="item-icon__img">
+                  <img src="./images/icon-testing-3.svg?9f6138f1dbc7435358df7f1f4e104e2a" alt="" class="item-icon__img">
                   <div class="item-icon__information">
                     <div class="item-icon__text">Покрытия наружной и внутренней поверхностей резервуаров</div>
                   </div>
@@ -403,7 +425,7 @@
               </div>
               <div class="col-md-6 col-lg-4">
                 <div class="icons-advantages__item icons-advantages__item_testing item-icon">
-                  <img src="../images/icon-testing-4.svg?807060e576c37d6a157d77023dc55907" alt="" class="item-icon__img">
+                  <img src="./images/icon-testing-4.svg?807060e576c37d6a157d77023dc55907" alt="" class="item-icon__img">
                   <div class="item-icon__information">
                       <div class="item-icon__text">Покрытия металлоконструкций<br>
                         (в любых климатических исполнениях)</div>
@@ -412,7 +434,7 @@
               </div>
               <div class="col-md-6 col-lg-4">
                 <div class="icons-advantages__item icons-advantages__item_testing item-icon">
-                  <img src="../images/icon-testing-5.svg?a29655be198cb818d2482aeb99b40656" alt="" class="item-icon__img">
+                  <img src="./images/icon-testing-5.svg?a29655be198cb818d2482aeb99b40656" alt="" class="item-icon__img">
                   <div class="item-icon__information">
                     <div class="item-icon__text">Металлы и сплавы</div>
                   </div>
@@ -420,7 +442,7 @@
               </div>
               <div class="col-md-6 col-lg-4">
                 <div class="icons-advantages__item icons-advantages__item_testing item-icon">
-                  <img src="../images/icon-testing-6.svg?171990568063ab3498c7e1ce75f0247c" alt="" class="item-icon__img">
+                  <img src="./images/icon-testing-6.svg?171990568063ab3498c7e1ce75f0247c" alt="" class="item-icon__img">
                   <div class="item-icon__information">
                     <div class="item-icon__text">Неметаллические материалы<br> (в том числе трубы из композиционных материалов)</div>
                   </div>
@@ -435,7 +457,7 @@
     </div>
   </div>
 </div>
-        <div class="lab-documents">
+      <div class="lab-documents">
   <div class="container">
     <div class="row">
       <div class="col-xl-6">
@@ -451,35 +473,35 @@
         <div class="lab-documents__photos zoom-photo">
           <div class="row text-center">
             <div class="col-6 col-sm-6">
-              <a href="../images/npcsamara-sm.jpg" class="zoom-photo__item" data-fancybox="documents" data-caption="
+              <a href="./images/npcsamara-sm.jpg" class="zoom-photo__item" data-fancybox="documents" data-caption="
                    <h3>Название фото</h3>
                    <p>Описание и много текста</p>">
                 <span class="zoom-photo__shadow"></span>
-                <img src="../images/npcsamara-sm.jpg?1f624233dd54d4b3427dee9e66684c06" alt="" class="zoom-photo__img img-fluid">
+                <img src="./images/npcsamara-sm.jpg?1f624233dd54d4b3427dee9e66684c06" alt="" class="zoom-photo__img img-fluid">
               </a>
             </div>
             <div class="col-6 col-sm-6">
-              <a href="../images/npcsamara-sm.jpg" class="zoom-photo__item" data-fancybox="documents" data-caption="
+              <a href="./images/npcsamara-sm.jpg" class="zoom-photo__item" data-fancybox="documents" data-caption="
                    <h3>Название фото</h3>
                    <p>Описание и много текста</p>">
                 <span class="zoom-photo__shadow"></span>
-                <img src="../images/npcsamara-sm.jpg?1f624233dd54d4b3427dee9e66684c06" alt="" class="zoom-photo__img img-fluid">
+                <img src="./images/npcsamara-sm.jpg?1f624233dd54d4b3427dee9e66684c06" alt="" class="zoom-photo__img img-fluid">
               </a>
             </div>
             <div class="col-6 col-sm-6">
-              <a href="../images/npcsamara-sm.jpg" class="zoom-photo__item" data-fancybox="documents" data-caption="
+              <a href="./images/npcsamara-sm.jpg" class="zoom-photo__item" data-fancybox="documents" data-caption="
                    <h3>Название фото</h3>
                    <p>Описание и много текста</p>">
                 <span class="zoom-photo__shadow"></span>
-                <img src="../images/npcsamara-sm.jpg?1f624233dd54d4b3427dee9e66684c06" alt="" class="zoom-photo__img img-fluid">
+                <img src="./images/npcsamara-sm.jpg?1f624233dd54d4b3427dee9e66684c06" alt="" class="zoom-photo__img img-fluid">
               </a>
             </div>
             <div class="col-6 col-sm-6">
-              <a href="../images/npcsamara-sm.jpg" class="zoom-photo__item" data-fancybox="documents" data-caption="
+              <a href="./images/npcsamara-sm.jpg" class="zoom-photo__item" data-fancybox="documents" data-caption="
                    <h3>Название фото</h3>
                    <p>Описание и много текста</p>">
                 <span class="zoom-photo__shadow"></span>
-                <img src="../images/npcsamara-sm.jpg?1f624233dd54d4b3427dee9e66684c06" alt="" class="zoom-photo__img img-fluid">
+                <img src="./images/npcsamara-sm.jpg?1f624233dd54d4b3427dee9e66684c06" alt="" class="zoom-photo__img img-fluid">
               </a>
             </div>
           </div>
@@ -488,49 +510,49 @@
     </div>
   </div>
 </div>
-        <div class="trust">
+      <div class="trust">
   <div class="container">
     <div class="trust__title title-h2">Нам доверяют</div>
     <div class="trust__slider slider-partners">
-      <div class="slider-partners__item"><img src="../images/p-slide-01.png?2ed4dc3b17b0a4cc7fac77b0a06c9a09" alt="" class="img-fluid slider-partners__img"></div>
-      <div class="slider-partners__item"><img src="../images/p-slide-02.png?df4b608e71119aba6ef13812d587b137" alt="" class="img-fluid slider-partners__img"></div>
-      <div class="slider-partners__item"><img src="../images/p-slide-03.png?350af82690333665e0d18526ba9ecae6" alt="" class="img-fluid slider-partners__img"></div>
-      <div class="slider-partners__item"><img src="../images/p-slide-04.png?a2bc2fc5ee027bfbbfac6179389fc4cd" alt="" class="img-fluid slider-partners__img"></div>
-      <div class="slider-partners__item"><img src="../images/p-slide-05.png?8536c15e135ae5325fbd9221ff6ba790" alt="" class="img-fluid slider-partners__img"></div>
-      <div class="slider-partners__item"><img src="../images/p-slide-06.png?02aafe1cc2724bf99b3091033f94560b" alt="" class="img-fluid slider-partners__img"></div>
-      <div class="slider-partners__item"><img src="../images/p-slide-07.png?8f1fce80ea5c0c08682352f1339f3595" alt="" class="img-fluid slider-partners__img"></div>
-      <div class="slider-partners__item"><img src="../images/p-slide-08.png?4ab5fba68199fe0e8857bacffa1e48e6" alt="" class="img-fluid slider-partners__img"></div>
-      <div class="slider-partners__item"><img src="../images/p-slide-09.png?00f231a86f8e090c4ac83e7e127bace6" alt="" class="img-fluid slider-partners__img"></div>
-      <div class="slider-partners__item"><img src="../images/p-slide-10.png?a1862971cab920d900cc08e1c38f05b2" alt="" class="img-fluid slider-partners__img"></div>
-      <div class="slider-partners__item"><img src="../images/p-slide-11.png?5190d4f858ce37c7d8d2e7b562c4b6cb" alt="" class="img-fluid slider-partners__img"></div>
-      <div class="slider-partners__item"><img src="../images/p-slide-12.png?def136fe2d11fa491c5bcb51c0e3782b" alt="" class="img-fluid slider-partners__img"></div>
-      <div class="slider-partners__item"><img src="../images/p-slide-13.png?95e14c567dd74fde60ac1d03aa2ab9a3" alt="" class="img-fluid slider-partners__img"></div>
-      <div class="slider-partners__item"><img src="../images/p-slide-14.png?9880a51811a4e8a7793dac1d4eed51db" alt="" class="img-fluid slider-partners__img"></div>
-      <div class="slider-partners__item"><img src="../images/p-slide-15.png?9f7d2b431daaaf19e37a4e8557c6c420" alt="" class="img-fluid slider-partners__img"></div>
-      <div class="slider-partners__item"><img src="../images/p-slide-16.png?d5cb58fb0ccf946d82b791e442246c3e" alt="" class="img-fluid slider-partners__img"></div>
-      <div class="slider-partners__item"><img src="../images/p-slide-17.png?7ea93c628fc4e3252c5de8c2131de73e" alt="" class="img-fluid slider-partners__img"></div>
-      <div class="slider-partners__item"><img src="../images/p-slide-18.png?fec71698a4cfcd784b8e492a76de40d4" alt="" class="img-fluid slider-partners__img"></div>
-      <div class="slider-partners__item"><img src="../images/p-slide-19.png?218f948abbacf9ed0d66b08b3629b6e6" alt="" class="img-fluid slider-partners__img"></div>
-      <div class="slider-partners__item"><img src="../images/p-slide-20.png?043f468794bdc62ac3f57b42d9cc7cf3" alt="" class="img-fluid slider-partners__img"></div>
-      <div class="slider-partners__item"><img src="../images/p-slide-21.png?d03b2d72b9c16d9b78f88beedca9e856" alt="" class="img-fluid slider-partners__img"></div>
-      <div class="slider-partners__item"><img src="../images/p-slide-22.png?5780f5e3171f53df2f157407be55f5b1" alt="" class="img-fluid slider-partners__img"></div>
-      <div class="slider-partners__item"><img src="../images/p-slide-23.png?04ca1e43ae40cc02dec6d34d28f99278" alt="" class="img-fluid slider-partners__img"></div>
-      <div class="slider-partners__item"><img src="../images/p-slide-24.png?53095e4692d424ac47f91b7af05a1016" alt="" class="img-fluid slider-partners__img"></div>
-      <div class="slider-partners__item"><img src="../images/p-slide-25.png?3b7a7eb2f4964eb4bf6e61472eba9784" alt="" class="img-fluid slider-partners__img"></div>
-      <div class="slider-partners__item"><img src="../images/p-slide-27.png?6b7f4cf48a69947fa2ce24dddbe9e8d1" alt="" class="img-fluid slider-partners__img"></div>
-      <div class="slider-partners__item"><img src="../images/p-slide-28.png?af8ac2d555ca7673240636b47abe1a89" alt="" class="img-fluid slider-partners__img"></div>
-      <div class="slider-partners__item"><img src="../images/p-slide-29.png?2b904971a78aaab2809cfd3a9243d8c3" alt="" class="img-fluid slider-partners__img"></div>
-      <div class="slider-partners__item"><img src="../images/p-slide-30.png?d35effd10f88e994aa77f6bf424ed029" alt="" class="img-fluid slider-partners__img"></div>
-      <div class="slider-partners__item"><img src="../images/p-slide-31.png?3e4439d776a67affab850196a966d262" alt="" class="img-fluid slider-partners__img"></div>
-      <div class="slider-partners__item"><img src="../images/p-slide-32.png?9de8eccc36570e5b4dd5376e2f16124c" alt="" class="img-fluid slider-partners__img"></div>
-      <div class="slider-partners__item"><img src="../images/p-slide-33.png?c3b508c58cb82b98da679804104784e5" alt="" class="img-fluid slider-partners__img"></div>
-      <div class="slider-partners__item"><img src="../images/p-slide-34.png?68c4a75f76edbeca28837075d016d0d7" alt="" class="img-fluid slider-partners__img"></div>
-      <div class="slider-partners__item"><img src="../images/p-slide-35.png?2a0bd4c0bc8218347fdae58844fdb0c1" alt="" class="img-fluid slider-partners__img"></div>
-      <div class="slider-partners__item"><img src="../images/p-slide-36.png?86a214764af033b75633ae3213907d97" alt="" class="img-fluid slider-partners__img"></div>
-      <div class="slider-partners__item"><img src="../images/p-slide-37.png?0bb294fe39e5800bef99e890085c1396" alt="" class="img-fluid slider-partners__img"></div>
-      <div class="slider-partners__item"><img src="../images/p-slide-38.png?cae8dabbcce20f8df04ab26c6ff0717b" alt="" class="img-fluid slider-partners__img"></div>
-      <div class="slider-partners__item"><img src="../images/p-slide-39.png?d4e82ea0520105c406c65ef16931ff36" alt="" class="img-fluid slider-partners__img"></div>
-      <div class="slider-partners__item"><img src="../images/p-slide-40.png?02e4b6db341c2a76d33cfbc972295aa9" alt="" class="img-fluid slider-partners__img"></div>
+      <div class="slider-partners__item"><img src="./images/p-slide-01.png?2ed4dc3b17b0a4cc7fac77b0a06c9a09" alt="" class="img-fluid slider-partners__img"></div>
+      <div class="slider-partners__item"><img src="./images/p-slide-02.png?df4b608e71119aba6ef13812d587b137" alt="" class="img-fluid slider-partners__img"></div>
+      <div class="slider-partners__item"><img src="./images/p-slide-03.png?350af82690333665e0d18526ba9ecae6" alt="" class="img-fluid slider-partners__img"></div>
+      <div class="slider-partners__item"><img src="./images/p-slide-04.png?a2bc2fc5ee027bfbbfac6179389fc4cd" alt="" class="img-fluid slider-partners__img"></div>
+      <div class="slider-partners__item"><img src="./images/p-slide-05.png?8536c15e135ae5325fbd9221ff6ba790" alt="" class="img-fluid slider-partners__img"></div>
+      <div class="slider-partners__item"><img src="./images/p-slide-06.png?02aafe1cc2724bf99b3091033f94560b" alt="" class="img-fluid slider-partners__img"></div>
+      <div class="slider-partners__item"><img src="./images/p-slide-07.png?8f1fce80ea5c0c08682352f1339f3595" alt="" class="img-fluid slider-partners__img"></div>
+      <div class="slider-partners__item"><img src="./images/p-slide-08.png?4ab5fba68199fe0e8857bacffa1e48e6" alt="" class="img-fluid slider-partners__img"></div>
+      <div class="slider-partners__item"><img src="./images/p-slide-09.png?00f231a86f8e090c4ac83e7e127bace6" alt="" class="img-fluid slider-partners__img"></div>
+      <div class="slider-partners__item"><img src="./images/p-slide-10.png?a1862971cab920d900cc08e1c38f05b2" alt="" class="img-fluid slider-partners__img"></div>
+      <div class="slider-partners__item"><img src="./images/p-slide-11.png?5190d4f858ce37c7d8d2e7b562c4b6cb" alt="" class="img-fluid slider-partners__img"></div>
+      <div class="slider-partners__item"><img src="./images/p-slide-12.png?def136fe2d11fa491c5bcb51c0e3782b" alt="" class="img-fluid slider-partners__img"></div>
+      <div class="slider-partners__item"><img src="./images/p-slide-13.png?95e14c567dd74fde60ac1d03aa2ab9a3" alt="" class="img-fluid slider-partners__img"></div>
+      <div class="slider-partners__item"><img src="./images/p-slide-14.png?9880a51811a4e8a7793dac1d4eed51db" alt="" class="img-fluid slider-partners__img"></div>
+      <div class="slider-partners__item"><img src="./images/p-slide-15.png?9f7d2b431daaaf19e37a4e8557c6c420" alt="" class="img-fluid slider-partners__img"></div>
+      <div class="slider-partners__item"><img src="./images/p-slide-16.png?d5cb58fb0ccf946d82b791e442246c3e" alt="" class="img-fluid slider-partners__img"></div>
+      <div class="slider-partners__item"><img src="./images/p-slide-17.png?7ea93c628fc4e3252c5de8c2131de73e" alt="" class="img-fluid slider-partners__img"></div>
+      <div class="slider-partners__item"><img src="./images/p-slide-18.png?fec71698a4cfcd784b8e492a76de40d4" alt="" class="img-fluid slider-partners__img"></div>
+      <div class="slider-partners__item"><img src="./images/p-slide-19.png?218f948abbacf9ed0d66b08b3629b6e6" alt="" class="img-fluid slider-partners__img"></div>
+      <div class="slider-partners__item"><img src="./images/p-slide-20.png?043f468794bdc62ac3f57b42d9cc7cf3" alt="" class="img-fluid slider-partners__img"></div>
+      <div class="slider-partners__item"><img src="./images/p-slide-21.png?d03b2d72b9c16d9b78f88beedca9e856" alt="" class="img-fluid slider-partners__img"></div>
+      <div class="slider-partners__item"><img src="./images/p-slide-22.png?5780f5e3171f53df2f157407be55f5b1" alt="" class="img-fluid slider-partners__img"></div>
+      <div class="slider-partners__item"><img src="./images/p-slide-23.png?04ca1e43ae40cc02dec6d34d28f99278" alt="" class="img-fluid slider-partners__img"></div>
+      <div class="slider-partners__item"><img src="./images/p-slide-24.png?53095e4692d424ac47f91b7af05a1016" alt="" class="img-fluid slider-partners__img"></div>
+      <div class="slider-partners__item"><img src="./images/p-slide-25.png?3b7a7eb2f4964eb4bf6e61472eba9784" alt="" class="img-fluid slider-partners__img"></div>
+      <div class="slider-partners__item"><img src="./images/p-slide-27.png?6b7f4cf48a69947fa2ce24dddbe9e8d1" alt="" class="img-fluid slider-partners__img"></div>
+      <div class="slider-partners__item"><img src="./images/p-slide-28.png?af8ac2d555ca7673240636b47abe1a89" alt="" class="img-fluid slider-partners__img"></div>
+      <div class="slider-partners__item"><img src="./images/p-slide-29.png?2b904971a78aaab2809cfd3a9243d8c3" alt="" class="img-fluid slider-partners__img"></div>
+      <div class="slider-partners__item"><img src="./images/p-slide-30.png?d35effd10f88e994aa77f6bf424ed029" alt="" class="img-fluid slider-partners__img"></div>
+      <div class="slider-partners__item"><img src="./images/p-slide-31.png?3e4439d776a67affab850196a966d262" alt="" class="img-fluid slider-partners__img"></div>
+      <div class="slider-partners__item"><img src="./images/p-slide-32.png?9de8eccc36570e5b4dd5376e2f16124c" alt="" class="img-fluid slider-partners__img"></div>
+      <div class="slider-partners__item"><img src="./images/p-slide-33.png?c3b508c58cb82b98da679804104784e5" alt="" class="img-fluid slider-partners__img"></div>
+      <div class="slider-partners__item"><img src="./images/p-slide-34.png?68c4a75f76edbeca28837075d016d0d7" alt="" class="img-fluid slider-partners__img"></div>
+      <div class="slider-partners__item"><img src="./images/p-slide-35.png?2a0bd4c0bc8218347fdae58844fdb0c1" alt="" class="img-fluid slider-partners__img"></div>
+      <div class="slider-partners__item"><img src="./images/p-slide-36.png?86a214764af033b75633ae3213907d97" alt="" class="img-fluid slider-partners__img"></div>
+      <div class="slider-partners__item"><img src="./images/p-slide-37.png?0bb294fe39e5800bef99e890085c1396" alt="" class="img-fluid slider-partners__img"></div>
+      <div class="slider-partners__item"><img src="./images/p-slide-38.png?cae8dabbcce20f8df04ab26c6ff0717b" alt="" class="img-fluid slider-partners__img"></div>
+      <div class="slider-partners__item"><img src="./images/p-slide-39.png?d4e82ea0520105c406c65ef16931ff36" alt="" class="img-fluid slider-partners__img"></div>
+      <div class="slider-partners__item"><img src="./images/p-slide-40.png?02e4b6db341c2a76d33cfbc972295aa9" alt="" class="img-fluid slider-partners__img"></div>
     </div>
 
     <div class="trust__reviews-find find find_small">
@@ -541,7 +563,7 @@
     </div>
   </div>
 </div>
-        <div class="general-information general-information_theme_pre-footer">
+      <div class="general-information general-information_theme_pre-footer">
   <div class="container">
     <div class="row">
 
@@ -589,7 +611,7 @@
 
           <div class="current-service__person person">
             <div class="person__photo">
-              <img src="../images/person1.png?af084d3e2eb901bd1e0cb8888e8bf77d" alt="" class="person__img img-fluid">
+              <img src="./images/person1.png?af084d3e2eb901bd1e0cb8888e8bf77d" alt="" class="person__img img-fluid">
             </div>
             <div class="person__info">
               <div class="person__name">Добрикова Марина Александровна</div>
@@ -695,20 +717,20 @@
       <div class="col-sm-6 col-md-5 col-xl-3">
         <div class="footer__lab">
           <a href="/" class="logo footer__logo transition">
-            <img src="../images/logo.svg?6fcbd3f3ed51e311b09301f7e884dfd7" alt="" class="logo__img">
+            <img src="./images/logo.svg?6fcbd3f3ed51e311b09301f7e884dfd7" alt="" class="logo__img">
           </a>
           <div class="cosial footer__cosial">
             <a href="#" class="cosial__item" target="_blank">
-              <img src="../images/cosial-01.svg?82821fa8b05bfe9a133dcfd6c64e0786" alt="" class="cosial__icon cosial__icon_vk">
+              <img src="./images/cosial-01.svg?82821fa8b05bfe9a133dcfd6c64e0786" alt="" class="cosial__icon cosial__icon_vk">
             </a>
             <a href="#" class="cosial__item" target="_blank">
-              <img src="../images/cosial-02.svg?a7a3f00acf83ac9e84ff51681a033d3e" alt="" class="cosial__icon cosial__icon_fb">
+              <img src="./images/cosial-02.svg?a7a3f00acf83ac9e84ff51681a033d3e" alt="" class="cosial__icon cosial__icon_fb">
             </a>
             <a href="#" class="cosial__item" target="_blank">
-              <img src="../images/cosial-03.svg?e251e6c08b390d5bc2844925551453d7" alt="" class="cosial__icon cosial__icon_inst">
+              <img src="./images/cosial-03.svg?e251e6c08b390d5bc2844925551453d7" alt="" class="cosial__icon cosial__icon_inst">
             </a>
             <a href="#" class="cosial__item" target="_blank">
-              <img src="../images/cosial-04.svg?3c3c1e5d328ecde1ed6806ac29f230a0" alt="" class="cosial__icon cosial__icon_twit">
+              <img src="./images/cosial-04.svg?3c3c1e5d328ecde1ed6806ac29f230a0" alt="" class="cosial__icon cosial__icon_twit">
             </a>
           </div>
           <div class="footer__copyright copyright">
@@ -725,8 +747,38 @@
     </div>
   </div>
 </footer>
+    <!-- Модальное окно -->
+<div class="modal modal-default animate__animated animate__fadeInUp" id="request" tabindex="-1" role="dialog" aria-labelledby="requestLabel" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+    <div class="modal-content modal-default__content">
+      <div class="modal-header modal-default__header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <img src="./images/close.svg?2c391e71655ce83a9a5e9a8c36314080" alt="" class="close__img">
+        </button>
+        <div class="modal-title modal-default__title">Оставить заявку</div>
+        <div class="modal-default__subtitle" id="requestSubtitle"></div>
+      </div>
+      <div class="modal-body modal-default__body">
+        <form action="" class="modal-default__form form-default form-default_two_columns">
+          <div class="form-row justify-content-end">
+            <div class="col-lg-6">
+              <input type="text" class="form-default__input" placeholder="Ваше имя">
+              <input type="text" class="form-default__input" placeholder="Название организации">
+              <input type="text" class="form-default__input" placeholder="Город">
+              <input type="text" class="form-default__input" placeholder="E-mail">
+              <input type="text" class="form-default__input" data-service="" hidden="">
+            </div>
+            <div class="col-lg-6">
+              <textarea class="form-default__textarea" placeholder="Комментарий"></textarea>
+              <button class="form-default__btn btn-link-default btn-link-default_v3 btn-link-default_width_full">Заказать звонок</button>
+            </div>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+</div>
 
 
-
-</body>
+  </body>
 </html>

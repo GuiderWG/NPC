@@ -199,4 +199,16 @@
     }
   }
 
+  .timeline {
+    &__text {
+      margin-left: -120px;
+      max-width: 100%;
+    }
+    &__information {
+      left: -22px;
+
+    }
+  }
+
+
 }

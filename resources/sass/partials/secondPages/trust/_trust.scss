@@ -1,6 +1,9 @@
 .trust {
   padding: 60px 0;
   background: darken(#012435, 2%);
+  &_theme_darken {
+    background: darken(#012435, 4%);
+  }
   &__title {
     margin-bottom: 70px;
   }

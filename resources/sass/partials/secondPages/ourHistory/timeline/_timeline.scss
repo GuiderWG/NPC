@@ -1,0 +1,121 @@
+.timeline {
+  position: relative;
+  height: 700px;
+  max-width: 95%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  &:before {
+    content: '';
+    display: block;
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 100%;
+    height: 3px;
+    @include boxShadowLine(#00C3FF);
+    background: $white;
+  }
+  &__item {
+    width: 200px;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  &__dot {
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    background: #022C43;
+    border: 2px solid $white;
+    @include boxShadow(#00C3FF);
+    position: relative;
+    transition: .3s ease-in-out;
+    cursor: pointer;
+    z-index: 9;
+    &:before {
+      content: '';
+      display: block;
+      position: absolute;
+      width: 2px;
+      height: 89px;
+      transform: translateX(-50%);
+      @include boxShadowLine(#00C3FF);
+      background: $white;
+    }
+    &:after {
+      content: '';
+      display: block;
+      position: absolute;
+      width: 8px;
+      height: 8px;
+      transform: translateX(-50%);
+      @include boxShadowLine(#00C3FF);
+      background: #07A7D8;
+      border-radius: 50%;
+    }
+    &:hover {
+      background: #07A7D8;
+      border: 2px solid #07A7D8;
+    }
+  }
+  &__information {
+    width: 320px;
+    position: absolute;
+    left: 50%;
+  }
+  &__year {
+    font-weight: 900;
+    font-size: 26px;
+    line-height: 30px;
+    letter-spacing: 0.03em;
+    color: #07A7D8;
+  }
+
+  &__item_pos_bottom &__dot {
+    &:before {
+      left: 50%;
+      top: 23px;
+    }
+    &:after {
+      left: 50%;
+      top: 106px;
+    }
+  }
+  &__item_pos_bottom &__information {
+    top: 123px;
+  }
+  &__item_pos_bottom &__year {
+    margin-bottom: 10px;
+  }
+  &__item_pos_top &__dot {
+    &:before {
+      left: 50%;
+      bottom: 23px;
+    }
+    &:after {
+      left: 50%;
+      bottom: 106px;
+    }
+  }
+  &__item_pos_top &__information {
+    bottom: 123px;
+  }
+  &__item_pos_top &__year {
+    margin-top: 10px;
+  }
+  &__text {
+    font-weight: 300;
+    font-size: 15px;
+    line-height: 18px;
+    opacity: 0;
+    transition: opacity .3s ease-in-out;
+  }
+
+  &__dot:hover ~ .timeline__information > .timeline__text, &__dot:focus ~ .timeline__information > .timeline__text {
+    opacity: 1;
+  }
+}

@@ -45,7 +45,7 @@
   }
   &:hover::after {
     transition: all .3s ease-in-out;
-    height: 160%;
+    height: 260%;
   }
   &_v3 {
     @include borderBlueRGBA(.8);
@@ -59,7 +59,7 @@
       @include bgBtnLinkDefault($white, $white);
     }
     &:hover::after {
-      height: 160%;
+      height: 260%;
     }
   }
   &_longer {

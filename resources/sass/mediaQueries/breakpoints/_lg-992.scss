@@ -281,4 +281,12 @@
     height: auto;
   }
 
+  .modal-default {
+    &__content {
+      padding: 40px 50px;
+    }
+  }
+
+
+
 }

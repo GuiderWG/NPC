@@ -1,6 +1,9 @@
 .certificates {
   background: #022C43;
   padding: 70px 0;
+  &__theme_darken {
+    background: #012435;
+  }
   &__title {
     margin-bottom: 20px;
   }
