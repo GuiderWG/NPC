@@ -1,10 +1,15 @@
 .person {
   display: flex;
-  justify-content: space-between;
+  justify-content: flex-start;
   align-items: center;
+  &_flex_wrap {
+    flex-wrap: wrap;
+  }
   &__photo {
     margin-right: 15px;
     flex-shrink: 0;
+    border-radius: 50%;
+    overflow: hidden;
   }
   &__name {
     font-weight: bold;
@@ -52,5 +57,13 @@
     height: 32px;
     top: -1px;
     left: -8px;
+  }
+  &__text {
+    max-width: 100%;
+    flex: 0 0 100%;
+    margin-top: 15px;
+    font-weight: 300;
+    font-size: 16px;
+    opacity: 0.5;
   }
 }

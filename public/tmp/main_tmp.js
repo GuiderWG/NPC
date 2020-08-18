@@ -80,12 +80,18 @@ $(document).ready(function () {
   });
   var currentServiceBtn = $('.current-service-btn'),
       currentServiceClose = $('.current-service__close'),
-      spoilerBtn = $('.spoiler__btn'); // default Spoiler
+      spoilerBtn = $('.spoiler__btn'),
+      spoilerPureBtn = $('.spoiler-pure__btn'); // default Spoiler
 
   spoilerBtn.click(function (e) {
     e.preventDefault();
     $(this).prev().slideToggle().toggleClass('spoiler__shift-text_show');
     $(this).addClass('spoiler__btn_hide');
+  });
+  spoilerPureBtn.click(function (e) {
+    e.preventDefault();
+    $(this).parent().toggleClass('spoiler-pure_show');
+    $(this).next().slideToggle();
   }); // Right menu on Services pages
 
   currentServiceBtn.click(function () {
@@ -357,7 +363,50 @@ $(document).ready(function () {
   // imgReplace();
 });
 document.addEventListener('DOMContentLoaded', function () {
+  /*YANDEX MAP*/
+  var ifmap = document.getElementById('map');
+
+  if (ifmap != null) {
+    var init = function init(ymaps) {
+      var myMap = new ymaps.Map('map', {
+        center: [53.19542104198738, 50.26114691796877],
+        controls: [],
+        zoom: 16,
+        behaviors: ['default', 'scrollZoom']
+      }),
+          myPlacemark = new ymaps.Placemark([53.19542104198738, 50.26114691796877], {
+        iconCaption: 'НПЦ "Самара"',
+        balloonContent: [// '<img style="width:100px;float:left;margin:20px 20px 20px 0;" alt="" src="../images/logo.png">' +
+        '<address>', '<strong>Научно-производственный центр "Самара"</strong>', '<br/>', 'Адрес: г. Самара Гаражный проезд 3-Е', '</address>'].join('')
+      }, {// Опции.
+        // Необходимо указать данный тип макета.
+        //iconLayout: 'default#image',
+        // Своё изображение иконки метки.
+        //iconImageHref: '../images/location-pin.svg',
+        // Размеры метки.
+        //iconImageSize: [20, 26],
+        // Смещение левого верхнего угла иконки относительно
+        // её "ножки" (точки привязки).
+        //iconImageOffset: [-2, -22]
+      }),
+          myCollection = new ymaps.GeoObjectCollection();
+      myCollection.add(myPlacemark);
+      var myBalloonLayout = ymaps.templateLayoutFactory.createClass('<p><strong>$[properties.name]</strong></p>' + '<p><strong>Адрес:</strong> $[properties.address]</p>');
+      ymaps.layout.storage.add('my#xpertlayout', myBalloonLayout);
+      myCollection.options.set({
+        balloonContentBodyLayout: 'my#xpertlayout',
+        balloonMaxWidth: 500
+      });
+      myMap.geoObjects.add(myCollection);
+    };
+
+    ymaps.ready(init);
+  }
+  /*---*/
+
   /* Map popup */
+
+
   (function () {
     var mapCities = document.querySelector('.map-cities'),
         mapCitiesBtn = document.querySelectorAll('.map-cities__btn'),

@@ -18,3 +18,38 @@
     }
   }
 }
+
+.spoiler-pure {
+  &__btn {
+    position: relative;
+    cursor: pointer;
+    padding-right: 19px;
+    &::after {
+      content: '';
+      background: url('../../../../img/sp-arr.svg') no-repeat;
+      display: block;
+      width: 13px;
+      height: 11px;
+      background-size: contain;
+      position: absolute;
+      top: 50%;
+      right: 0;
+      margin-top: -5px;
+      transition: transform .3s ease-in-out;
+    }
+  }
+  &__content {
+    display: none;
+    padding: 30px 0;
+  }
+  
+  &_show {
+    .spoiler-pure__btn {
+      position: relative;
+      &::after {
+        transform: rotate(180deg);
+      }
+    }
+  }
+
+}
