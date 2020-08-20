@@ -2902,6 +2902,76 @@ body.preloader {
   border-bottom: 1px solid rgba(7, 167, 216, 0.7);
 }
 
+.staff {
+  padding-top: 40px;
+}
+
+.staff__item {
+  margin-bottom: 50px;
+}
+
+.employee-card {
+  -webkit-transform-style: preserve-3d;
+          transform-style: preserve-3d;
+  transition: 0.7s linear;
+  position: relative;
+  height: 540px;
+}
+
+.employee-card__information {
+  background: #022C43;
+  height: 150px;
+  padding: 25px 25px 10px 33px;
+}
+
+.employee-card__name {
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 20px;
+  margin-bottom: 10px;
+}
+
+.employee-card__position {
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 19px;
+}
+
+.employee-card__front,
+.employee-card__back {
+  width: 100%;
+  height: 100%;
+  -webkit-backface-visibility: hidden;
+          backface-visibility: hidden;
+}
+
+.employee-card__front {
+  z-index: 2;
+  -webkit-transform: rotateY(0deg);
+          transform: rotateY(0deg);
+}
+
+.employee-card__back {
+  -webkit-transform: rotateY(-180deg);
+          transform: rotateY(-180deg);
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.employee-card-flipper {
+  -webkit-perspective: 1200;
+  perspective: 1200;
+  -moz-transform: perspective(1200px);
+  -webkit-transform-style: preserve-3d;
+  transform-style: preserve-3d;
+}
+
+.employee-card-flipper:hover .employee-card {
+  -webkit-transform: rotateY(180deg);
+          transform: rotateY(180deg);
+}
+
 @-webkit-keyframes bounceArrowLeft {
   0%, 50%, 100% {
     background-position: center center;
@@ -3504,6 +3574,14 @@ body.preloader {
   .timeline__information {
     left: -22px;
   }
+
+  .employee-card {
+    height: 485px;
+  }
+
+  .employee-card__information {
+    height: 170px;
+  }
 }
 
 @media (max-width: 1199.98px) {
@@ -3801,6 +3879,14 @@ body.preloader {
   .service-category {
     padding: 75px 50px 0 35px;
     height: 480px;
+  }
+
+  .employee-card {
+    height: 515px;
+  }
+
+  .employee-card__information {
+    height: 160px;
   }
 }
 
@@ -4122,6 +4208,18 @@ body.preloader {
   .modal-default__content {
     padding: 40px 50px;
   }
+
+  .employee-card {
+    height: 541px;
+  }
+
+  .employee-card__information {
+    height: 140px;
+  }
+
+  .employee-card__img {
+    width: 100%;
+  }
 }
 
 @media (max-width: 767.98px) {
@@ -4401,6 +4499,14 @@ body.preloader {
   .timeline__item_pos_top .timeline__dot::after {
     left: 114px;
     top: 6px;
+  }
+
+  .employee-card {
+    height: 481px;
+  }
+
+  .employee-card__information {
+    height: 170px;
   }
 }
 
@@ -5025,6 +5131,15 @@ body.preloader {
 
   .timeline .timeline__item_pos_top .timeline__text {
     margin-left: 20px;
+  }
+
+  .employee-card {
+    height: 100%;
+  }
+
+  .employee-card__information {
+    height: auto;
+    padding-bottom: 30px;
   }
 }
 

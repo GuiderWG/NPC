@@ -285,4 +285,11 @@
     height: 480px;
   }
 
+  .employee-card {
+    height: 515px;
+    &__information {
+      height: 160px;
+    }
+  }
+
 }

@@ -210,5 +210,12 @@
     }
   }
 
+  .employee-card {
+    height: 485px;
+    &__information {
+      height: 170px;
+    }
+  }
+
 
 }

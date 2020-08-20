@@ -557,5 +557,12 @@
     }
   }
 
+  .employee-card {
+    height: 100%;
+    &__information {
+      height: auto;
+      padding-bottom: 30px;
+    }
+  }
 
 }

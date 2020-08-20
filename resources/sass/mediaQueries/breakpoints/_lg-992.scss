@@ -287,6 +287,14 @@
     }
   }
 
-
+  .employee-card {
+    height: 541px;
+    &__information {
+      height: 140px;
+    }
+    &__img {
+      width: 100%;
+    }
+  }
 
 }
