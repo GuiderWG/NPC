@@ -12,8 +12,9 @@
   &__item {
     position: relative;
     margin-bottom: 30px;
-    display: inline-block;
+    display: block;
     transition: box-shadow .3s ease-in-out;
+    background: $white;
     &:hover {
       box-shadow: 0 0 0 3px #07A7D8;
     }

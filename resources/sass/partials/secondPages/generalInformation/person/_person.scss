@@ -10,6 +10,7 @@
     flex-shrink: 0;
     border-radius: 50%;
     overflow: hidden;
+    max-width: 110px;
   }
   &__name {
     font-weight: bold;
@@ -62,6 +63,7 @@
     max-width: 100%;
     flex: 0 0 100%;
     margin-top: 15px;
+    margin-bottom: 60px;
     font-weight: 300;
     font-size: 16px;
     opacity: 0.5;

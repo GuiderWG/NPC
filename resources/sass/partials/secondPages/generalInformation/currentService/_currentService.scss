@@ -85,9 +85,13 @@
     transition: .3s;
     opacity: 0.8;
     color: $white;
-    &_active, &:hover {
+    &:hover {
       color: #07A7D8;
       text-decoration: none;
     }
+  }
+  &__item_active &__link {
+    color: #07A7D8;
+    text-decoration: none;
   }
 }

@@ -1,5 +1,8 @@
 .reviews {
-  margin-top: 60px;
   padding: 70px 0 75px;
   background: #022C43;
+  &__item {
+    height: 300px;
+    overflow: hidden;
+  }
 }

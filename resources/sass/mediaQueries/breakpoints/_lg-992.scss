@@ -297,4 +297,16 @@
     }
   }
 
+  .reviews {
+    &__item {
+      height: auto;
+    }
+  }
+
+  .article {
+    &__img-wrap {
+      height: auto;
+    }
+  }
+
 }

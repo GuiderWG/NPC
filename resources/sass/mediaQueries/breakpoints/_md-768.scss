@@ -299,4 +299,34 @@
     }
   }
 
+  .article {
+    flex-direction: column;
+
+    &__date {
+      font-size: 16px;
+    }
+
+    &__title {
+      font-size: 22px;
+    }
+
+    &__body {
+      padding: 28px 28px 28px 28px;
+    }
+    &:after {
+      top: auto;
+      bottom: 30px;
+    }
+  }
+
+  .articles-head {
+    &__title {
+      font-size: 16px;
+      padding: 18px 20px;
+      &.nj-tabs__title_active {
+        padding: 17px 20px;
+      }
+    }
+  }
+
 }

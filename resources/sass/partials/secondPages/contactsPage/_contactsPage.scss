@@ -9,17 +9,13 @@
 }
 
 .contacts-information {
-  &__person {
-    margin-top: 60px;
-    margin-bottom: 30px;
-  }
   &__title {
     font-weight: bold;
     font-size: 18px;
     line-height: 21px;
     letter-spacing: 0.1em;
     text-transform: uppercase;
-    margin-bottom: 30px;
+    margin-bottom: 60px;
   }
   &__item {
     position: relative;

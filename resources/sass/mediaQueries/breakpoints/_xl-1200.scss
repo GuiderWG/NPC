@@ -292,4 +292,14 @@
     }
   }
 
+  .reviews {
+    &__item {
+      height: 300px;
+    }
+  }
+
+  .article__title {
+    font-size: 26px;
+  }
+
 }

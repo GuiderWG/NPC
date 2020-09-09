@@ -19,6 +19,10 @@
       @include shadowBtnLinkDefaultHover(#00C3FF, #00C3FF);
     }
   }
+  &__input.error_input {
+    border: 1px solid #DA0F00;
+    @include shadowBtnLinkDefaultHover(#DA0F00, #DA0F00);
+  }
   &__textarea {
     resize: none;
     font-weight: 300;
@@ -41,11 +45,42 @@
       @include shadowBtnLinkDefaultHover(#00C3FF, #00C3FF);
     }
   }
+
+  &__textarea.error_input {
+    border: 1px solid #DA0F00;
+    @include shadowBtnLinkDefaultHover(#DA0F00, #DA0F00);
+  }
   &_two_columns  .form-default__input {
     margin-bottom: 30px;
   }
   &_two_columns  .form-default__textarea {
     margin-bottom: 30px;
     height: 204px;
+  }
+}
+
+.error_message {
+  background: none;
+  box-shadow: none;
+  opacity: 1;
+  position: relative;
+  text-align: center;
+}
+
+.callback-success {
+  color: #007d34;
+  &__text {
+    font-size: 16px;
+    display: block;
+    margin-top: 10px;
+    &_big {
+      font-size: 20px;
+      display: block;
+      font-weight: 600;
+      text-transform: uppercase;
+    }
+  }
+  i {
+    font-size: 50px;
   }
 }

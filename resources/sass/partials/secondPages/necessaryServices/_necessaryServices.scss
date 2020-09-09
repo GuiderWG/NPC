@@ -1,6 +1,12 @@
 .necessary-services {
   position: relative;
   background: #022C43;
+  &_theme_dark {
+    background: #012435;
+  }
+  &_theme_gradient {
+    background: radial-gradient(65.14% 84.79% at 10% 100%, #033755 0%, #012435 100%);
+  }
   &_testing {
     background: radial-gradient(65.14% 84.79% at 100% 0%, #033755 0%, #012435 100%);
   }
@@ -43,30 +49,3 @@
   }
 }
 
-/*.necessary-services {
-  position: relative;
-  background: #022C43;
-  &__group {
-    padding: 60px 0 0 0;
-  }
-  &__title {
-    text-align: right;
-    margin-bottom: 70px;
-  }
-  &__subtitle {
-    margin-bottom: 25px;
-    font-weight: bold;
-    font-size: 18px;
-    letter-spacing: 0.1em;
-    text-transform: uppercase;
-    opacity: 0.6;
-  }
-  &__photo {
-    position: absolute;
-    right: 0;
-    top: 0;
-  }
-  &__img {
-    margin-right: 0;
-  }
-}*/

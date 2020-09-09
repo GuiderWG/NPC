@@ -469,7 +469,8 @@ document.addEventListener('DOMContentLoaded', function () {
   (function () {
     var tab = document.querySelectorAll('.nj-tabs__title'),
         groupTabs = document.querySelector('.nj-tabs__group-tabs'),
-        tabInfo = document.querySelectorAll('.nj-tabs__info');
+        tabInfo = document.querySelectorAll('.nj-tabs__info'),
+        tabInfoFade = document.querySelectorAll('.nj-tabs__info-fade');
 
     if (groupTabs) {
       var showTabInfo = function showTabInfo(item) {
@@ -483,6 +484,14 @@ document.addEventListener('DOMContentLoaded', function () {
             tabInfo[item].classList.add('nj-tabs__info_show', 'animate__animated', 'animate__fadeInUp');
           }
         });
+        tabInfoFade.forEach(function (currentTab) {
+          var dataAnim = currentTab.dataset.animation;
+          currentTab.classList.remove('nj-tabs__info_show', 'animate__animated', dataAnim);
+        });
+        tabInfoFade.forEach(function () {
+          var dataAnim = tabInfoFade[item].dataset.animation;
+          tabInfoFade[item].classList.add('nj-tabs__info_show', 'animate__animated', dataAnim);
+        });
       };
 
       groupTabs.addEventListener('click', function (e) {
@@ -494,7 +503,7 @@ document.addEventListener('DOMContentLoaded', function () {
         if (innerWidth <= 991) {
           nodeObj.scrollIntoView({
             behavior: "smooth",
-            block: "center"
+            block: "nearest"
           });
         }
 

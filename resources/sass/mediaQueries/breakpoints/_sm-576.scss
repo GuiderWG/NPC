@@ -393,7 +393,7 @@
     }
     &__photo {
       margin: 0 0 10px 0;
-      max-width: 80px;
+      max-width: 116px;
     }
     &__phone {
       margin-bottom: 10px;
@@ -401,6 +401,9 @@
     &__phone, &__email {
       display: inline-block;
       margin-bottom: 20px;
+    }
+    &__text {
+      margin-top: 0;
     }
   }
   .current-service {
@@ -563,6 +566,20 @@
       height: auto;
       padding-bottom: 30px;
     }
+  }
+
+  .articles-head {
+    &__title {
+      margin-bottom: 20px;
+      margin-right: 0;
+      display: block;
+      border-radius: 15px;
+      font-size: 18px;
+      &.nj-tabs__title_active {
+        border: 1px solid #07a7d8;
+      }
+    }
+
   }
 
 }

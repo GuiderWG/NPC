@@ -45,6 +45,14 @@
       transform: scale(1);
     }
   }
+  &__item_active &__link {
+    @include textShadow(#00C3FF);
+    color: $white;
+    &::after {
+      content: '';
+      transform: scale(1);
+    }
+  }
   &__item_dropdown_open &__link {
     @include textShadow(#00C3FF);
     color: $white;
@@ -87,5 +95,9 @@
       @include textShadow(#00C3FF);
       text-decoration: none;
     }
+  }
+  &__item_active &__link {
+    color: $white;
+    @include textShadow(#00C3FF);
   }
 }

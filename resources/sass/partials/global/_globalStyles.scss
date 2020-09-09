@@ -1,3 +1,24 @@
+.diafan-admin-panel {
+  background: rgba(46, 46, 46, .6) !important;
+}
+
+.devoloper_tech {
+  display: none !important;
+}
+
+.diafan-admin-toggle {
+  display: none !important;
+}
+
+.useradmin_meta {
+  background: #2E2E2E !important;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 9999;
+}
+
 * {
   outline: none !important;
 }
@@ -6,6 +27,12 @@
   linear-gradient(254.36deg, rgba(56,167,201, 1) 0%, rgba(2,87,150, 1) 94.49%);
   padding-top: 200px;
   min-height: 1000px;
+  &__reviews {
+    margin-top: 60px;
+  }
+  &__articles-head {
+    margin-top: 70px;
+  }
 }
 
 .section {
@@ -47,6 +74,7 @@
 @import "zoomPhoto/zoomPhoto";
 @import "footer/footer";
 @import "modals/modals";
+@import "paginator/paginator";
 
 
 .map {
@@ -57,3 +85,26 @@
   }
 }
 
+@media screen and (max-width: 767px) {
+  #grid[data-columns]::before {
+    content: '2 .col-6';
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 991px) {
+  #grid[data-columns]::before {
+    content: '2 .col-6';
+  }
+}
+
+@media screen and (min-width: 992px) and (max-width: 1199px) {
+  #grid[data-columns]::before {
+    content: '2 .col-6';
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  #grid[data-columns]::before {
+    content: '4 .col-lg-3';
+  }
+}
