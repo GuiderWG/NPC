@@ -1,0 +1,105 @@
+.partners-map {
+  padding-bottom: 60px;
+}
+
+.partners {
+  padding: 60px 0;
+  background: #022C43;
+  &__top {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-bottom: 60px;
+  }
+  &__btn {
+    text-transform: none;
+    padding: 5px 75px 5px 25px;
+    position: relative;
+    margin-left: 40px;
+    margin-bottom: 0;
+  }
+}
+
+.deal-partners {
+  &__group {
+    margin-bottom: 50px;
+  }
+  &__item {
+    margin-bottom: 40px;
+  }
+  &__city {
+    font-size: 36px;
+    letter-spacing: 0.03em;
+    margin-bottom: 30px;
+    font-weight: bold;
+    text-transform: uppercase;
+    display: inline-block;
+    color: $white;
+    text-decoration: none;
+    position: relative;
+    &::before {
+      content: "";
+      position: absolute;
+      transform: translateY(-50%);
+      top: 50%;
+      right: -37px;
+      background: url('../../../../img/arrow-right.svg') no-repeat;
+      background-size: contain;
+      width: 26px;
+      height: 21px;
+      display: block;
+      transition: 0.3s;
+    }
+    &::after {
+      content: "";
+      -webkit-transform: scale(0);
+      transform: scale(0);
+      height: 1px;
+      width: 100%;
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      background: rgba(255, 255, 255, 0.8);
+      box-shadow: 0px 0px 7px #00C3FF;
+      transition: 0.3s;
+    }
+    &:hover {
+      color: #fff;
+      text-shadow: 0px 0px 7px #00C3FF;
+      text-decoration: none;
+    }
+    &:hover::before {
+      background: url('../../../../img/arrow-next-shine.svg') no-repeat;
+      background-size: contain;
+      width: 40px;
+      height: 36px;
+      right: -60px;
+    }
+    &:hover::after {
+      content: "";
+      -webkit-transform: scale(1);
+      transform: scale(1);
+    }
+    &_without_animation {
+      &:after, &:before {
+        display: none;
+      }
+      &:hover {
+        text-shadow: none;
+      }
+    }
+  }
+}
+
+.agent {
+  &__title {
+    font-weight: bold;
+    font-size: 24px;
+    margin-bottom: 20px;
+  }
+  &__city {
+    opacity: .5;
+  }
+}
+

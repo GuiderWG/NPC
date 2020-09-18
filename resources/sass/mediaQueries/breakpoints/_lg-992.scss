@@ -225,6 +225,10 @@
       padding: 15px 15px 60px 15px;
       flex: 0 0 66%;
       max-width: 66%;
+      &_full {
+        flex: 0 0 100%;
+        max-width: 100%;
+      }
     }
     &__text {
       opacity: 1;
@@ -306,6 +310,17 @@
   .article {
     &__img-wrap {
       height: auto;
+      &_width_more {
+        flex: 0 0 0;
+      }
+    }
+  }
+
+  .partners {
+    &__btn {
+      margin-top: 20px;
+      margin-left: 0;
+      right: 0;
     }
   }
 

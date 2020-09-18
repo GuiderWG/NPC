@@ -301,6 +301,11 @@
 
   .article {
     flex-direction: column;
+    &__img-wrap {
+      &_width_more {
+        flex: 0 0 100%;
+      }
+    }
 
     &__date {
       font-size: 16px;

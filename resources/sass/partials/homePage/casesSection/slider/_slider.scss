@@ -1,12 +1,11 @@
 .slider-cases {
-  max-width: 678px;
   opacity: 0;
   transition: opacity .3s ease-in-out;
   &.slick-initialized {
     opacity: 1;
   }
   &__item {
-    margin-bottom: 60px;
+    margin-bottom: 30px;
   }
   &__bottom {
     display: flex;
@@ -25,7 +24,7 @@
   border-radius: 15px;
   &__title {
     font-weight: 900;
-    font-size: 24px;
+    font-size: 22px;
     letter-spacing: 0.03em;
     margin-bottom: 3px;
   }
@@ -36,14 +35,9 @@
     letter-spacing: 0.01em;
     margin-bottom: 13px;
   }
-  &__paragraph {
-    font-size: 16px;
-    font-weight: 300;
-    margin-bottom: 10px;
-  }
-  &__paragraph strong {
-    font-size: 18px;
-    font-weight: bold;
+  &__text {
+    max-height: 340px;
+    overflow: auto;
   }
 }
 

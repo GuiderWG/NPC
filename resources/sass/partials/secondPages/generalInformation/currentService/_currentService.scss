@@ -89,9 +89,28 @@
       color: #07A7D8;
       text-decoration: none;
     }
+    &.nj-tabs__title_active {
+      color: #07A7D8;
+      text-decoration: none;
+    }
   }
   &__item_active &__link {
     color: #07A7D8;
     text-decoration: none;
+  }
+  &_simple {
+    margin: 0;
+    padding: 0;
+    max-height: 500px;
+    overflow: auto;
+    &::after {
+      display: none;
+    }
+    & .menu-services__item {
+      margin-bottom: 15px;
+      &:last-child {
+        margin-bottom: 0;
+      }
+    }
   }
 }

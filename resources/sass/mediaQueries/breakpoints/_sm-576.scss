@@ -407,6 +407,7 @@
     }
   }
   .current-service {
+    padding: 36px 15px 20px;
     &-btn {
       right: -82px;
       padding: 8px 30px;
@@ -421,6 +422,9 @@
     line-height: 17px;
     &__item {
       margin-bottom: 18px;
+    }
+    &_simple {
+      max-height: 250px;
     }
   }
 
@@ -568,6 +572,14 @@
     }
   }
 
+  .article {
+    flex-direction: column;
+    &__text {
+      margin-bottom: 40px;
+      font-size: 14px;
+    }
+  }
+
   .articles-head {
     &__title {
       margin-bottom: 20px;
@@ -579,7 +591,38 @@
         border: 1px solid #07a7d8;
       }
     }
+  }
 
+  .partners {
+    &__btn {
+      margin-top: 20px;
+      margin-left: 0;
+      right: 0;
+      padding: 5px 50px 5px 20px;
+      font-size: 16px;
+    }
+    &__title {
+      margin-bottom: 0;
+    }
+  }
+
+  .btn-link-default__arrow {
+    width: 30px;
+    top: 2px;
+  }
+
+  .deal-partners {
+    &__city {
+      font-size: 26px;
+      margin-bottom: 20px;
+    }
+  }
+
+  .agent {
+    &__title {
+      font-size: 20px;
+      margin-bottom: 15px
+    }
   }
 
 }

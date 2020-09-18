@@ -7,9 +7,8 @@
       preloaderStart.classList.add('animate__animated', 'animate__fadeOutDown');
       setTimeout(function () {
         preloaderStart.classList.add('preloader__container_hide');
-      }, 1000); //preloaderStart.classList.
-    }; // Показываем Preloader еще некоторое время после загрузки страницы
-
+      }, 1000);
+    };
 
     document.body.classList.add('preloader');
 
@@ -17,15 +16,13 @@
       setTimeout(function () {
         fadeOutPreloader(preloaderStart);
       }, 2000);
-    }; //Показываем Preloader перед переходом на страницу
-
+    };
 
     var fadeInPreloader = function fadeInPreloader() {
       document.body.classList.add('preloader');
       preloaderStart.classList.remove('animate__fadeOutDown', 'preloader__container_hide');
       preloaderStart.classList.add('preloader__container_show', 'animate__backInUp');
-    }; // Находим ссылки с классом, осуществляем вызов функции и переходим на страницу через определенное время
-
+    };
 
     document.addEventListener('click', function (event) {
       var target = event.target,
@@ -78,10 +75,19 @@ $(document).ready(function () {
       arrows: true
     }
   });
-  var currentServiceBtn = $('.current-service-btn'),
-      currentServiceClose = $('.current-service__close'),
+  var currentServiceBtn = $('.current-service-btn, .partners__btn'),
+      currentServiceClose = $('.current-service__close, .menu-services__link'),
       spoilerBtn = $('.spoiler__btn'),
-      spoilerPureBtn = $('.spoiler-pure__btn'); // default Spoiler
+      spoilerPureBtn = $('.spoiler-pure__btn');
+
+  function currentServiceFixedShow() {
+    $('.current-service_fixed').addClass('current-service_fixed_show');
+  }
+
+  function currentServiceFixedHide() {
+    $('.current-service_fixed').removeClass('current-service_fixed_show');
+  } // default Spoiler
+
 
   spoilerBtn.click(function (e) {
     e.preventDefault();
@@ -92,21 +98,29 @@ $(document).ready(function () {
     e.preventDefault();
     $(this).parent().toggleClass('spoiler-pure_show');
     $(this).next().slideToggle();
-  }); // Right menu on Services pages
-
-  currentServiceBtn.click(function () {
-    $(this).next().addClass('current-service_fixed_show');
+  });
+  currentServiceBtn.click(function (e) {
+    e.preventDefault();
+    $('.current-service_fixed').toggleClass('current-service_fixed_show');
   });
   currentServiceClose.click(function () {
-    $(this).parent().removeClass('current-service_fixed_show');
+    currentServiceFixedHide();
+  });
+  $('.partners-map__link').click(function (e) {
+    e.preventDefault();
+    var partnersTop = document.querySelector('.partners');
+    partnersTop.scrollIntoView({
+      behavior: "smooth",
+      block: "start"
+    });
+    setTimeout(currentServiceFixedShow, 700);
   }); // Do something when happened scroll
 
   $(window).scroll(function () {
     $('.top-menu').removeClass('fixed-top');
     var top = $('.top'),
         generalInformation = $('.general-information'),
-        //mainPagePadding  = parseInt($('.main-page').css("padding-top")),
-    mainPage = $('.main-page'),
+        mainPage = $('.main-page'),
         generalInformationTheme = $('.general-information_theme_pre-footer'),
         currentServiceFixed = $('.current-service_fixed'),
         ThisScrollToTop = $(this).scrollTop();
@@ -123,29 +137,12 @@ $(document).ready(function () {
       } else {
         currentServiceBtn.removeClass('current-service-btn_show');
         currentServiceFixed.removeClass('current-service_fixed_show');
-      } // if ($(this).scrollTop() > (mainPage - generalInformationTheme * 2)) {
-      //   currentServiceBtn.removeClass('current-service-btn_show');
-      //   currentServiceFixed.removeClass('current-service_fixed_show');
-      // } else {
-      //   currentServiceBtn.addClass('current-service-btn_show');
-      // }
-
+      }
     } else {
       currentServiceBtn.addClass('current-service-btn_show');
     }
   }).scroll();
   /*---*/
-
-  /* BG Menu on mobile or second pages */
-
-  /*$(window).resize(function () {
-    let top = $('.top');
-    if($(this).width() < 992 || $(this).height() < 920){
-      top.addClass('top_responsive');
-    } else {
-      top.removeClass('top_responsive');
-    }
-  }).trigger('resize');*/
 
   /* TOP MENU DROPDOWN 2LVL */
 
@@ -177,13 +174,60 @@ $(document).ready(function () {
     }).slick({
       fade: true,
       arrows: false,
-      adaptiveHeight: true
+      adaptiveHeight: true,
+      autoplay: true,
+      pauseOnHover: false,
+      autoplaySpeed: 5000
     });
   }
   /* END Main slick slider */
 
-  /* Slider about our partners */
+  /* Slider about our case */
 
+
+  var sliderCase = $('.slider-case');
+
+  if (sliderCase) {
+    sliderCase.slick({
+      slidesToShow: 1,
+      slidesToScroll: 1,
+      arrows: false,
+      autoplay: true,
+      autoplaySpeed: 5000,
+      adaptiveHeight: true,
+      asNavFor: '.slider-case-thmb'
+    });
+  }
+
+  var sliderСaseThmb = $('.slider-case-thmb');
+
+  if (sliderСaseThmb) {
+    sliderСaseThmb.slick({
+      slidesToShow: 3,
+      slidesToScroll: 1,
+      asNavFor: '.slider-case',
+      dots: false,
+      arrows: false,
+      centerMode: false,
+      focusOnSelect: true,
+      responsive: [{
+        breakpoint: 568,
+        settings: {
+          slidesToShow: 2,
+          slidesToScroll: 1
+        }
+      }]
+    });
+  } //remove active class from all thumbnail slides
+
+
+  var sliderCaseThmbActive = $('.slider-case-thmb .slick-slide');
+  sliderCaseThmbActive.removeClass('slick-active'); //set active class to first thumbnail slides
+
+  sliderCaseThmbActive.eq(0).addClass('slick-active');
+  /* END Slider about our case */
+
+  /* Slider about our certificates */
 
   var sliderCertificates = $('.slider-certificates');
 
@@ -225,7 +269,7 @@ $(document).ready(function () {
       }]
     });
   }
-  /* END Slider about our partners */
+  /* END Slider about our certificates */
 
   /* Slider about our partners */
 
@@ -293,7 +337,7 @@ $(document).ready(function () {
       infinite: true,
       arrows: false,
       adaptiveHeight: true,
-      //autoplay: true,
+      autoplay: true,
       autoplaySpeed: 5000
     });
   }
@@ -328,7 +372,7 @@ $(document).ready(function () {
 
   animateNumber();
   $('#fullpage').fullpage({
-    anchors: ['1Page', '2Page', '3Page', '4page', '5page', '6page', '7page'],
+    anchors: ['otdely', 'napravleniya', 'preimushchestva', 'keysy', 'partnery', 'media', 'kontakty'],
     responsiveWidth: 992,
     responsiveHeight: 920,
     verticalCentered: false,
@@ -351,16 +395,6 @@ $(document).ready(function () {
     labelBack: 'Назад'
   });
   /* END Mobile menu */
-
-  /*TODO Удалить на проде*/
-  // const imgReplace = () => {
-  //   let mainSliderTextPicture = $('.main-slider__text-picture').find('.main-slider__prod-img');
-  //   mainSliderTextPicture.each((item, val) => {
-  //     [val.src, val.dataset.mobile] = [val.dataset.mobile, val.src]
-  //   });
-  // };
-  //
-  // imgReplace();
 });
 document.addEventListener('DOMContentLoaded', function () {
   /*YANDEX MAP*/

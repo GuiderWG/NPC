@@ -1,5 +1,5 @@
 .slider {
-  &-partners, &-certificates {
+  &-partners, &-certificates, &-case, &-case-thmb  {
     opacity: 0;
     transition: opacity .3s ease-in-out;
     height: 0;
@@ -21,6 +21,38 @@
     }
     &__item {
       margin-top: 5px;
+    }
+  }
+
+  &-case {
+    & .slick-slide {
+      margin: 3px 15px;
+    }
+    & .slick-list {
+      margin-left: -15px;
+      margin-right: -15px;
+    }
+  }
+
+  &-case-thmb {
+    & .slick-slide {
+      margin: 3px 15px;
+    }
+    & .slick-list {
+      margin-left: -14px;
+      margin-right: -15px;
+    }
+    & .slick-slide.slick-current &__item {
+      box-shadow: 0 0 0 3px #07A7D8;
+    }
+    &__item {
+      cursor: pointer;
+      height: 137px;
+      & img {
+        object-fit: cover;
+        height: 100%;
+        object-position: center;
+      }
     }
   }
 }

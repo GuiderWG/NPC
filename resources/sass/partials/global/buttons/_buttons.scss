@@ -65,4 +65,9 @@
   &_longer {
     padding: 10px 70px;
   }
+  &__arrow {
+    position: absolute;
+    top: 0;
+    right: 10px;
+  }
 }
