@@ -625,4 +625,23 @@
     }
   }
 
+  .partners-map {
+    padding: 60px 0;
+    &__link {
+      padding: 10px 30px;
+    }
+    &__top {
+      position: relative;
+    }
+    &__img {
+      position: absolute;
+      left: 0;
+      top: 0;
+    }
+    &__title {
+      font-size: 22px;
+      line-height: 26px;
+    }
+  }
+
 }

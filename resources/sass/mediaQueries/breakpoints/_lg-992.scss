@@ -324,4 +324,17 @@
     }
   }
 
+  .partners-map {
+    margin-top: -10px;
+    &__title {
+      font-size: 26px;
+      line-height: 30px;
+    }
+    &__text {
+      margin-bottom: 20px;
+      font-size: 16px;
+      line-height: 20px;
+    }
+  }
+
 }

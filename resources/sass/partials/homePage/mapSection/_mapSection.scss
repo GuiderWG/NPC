@@ -23,7 +23,7 @@
   }
   &__map {
     position: absolute;
-    bottom: 30px;
+    bottom: -30px;
     left: 0;
     padding-left: 5%;
     width: 100%;
@@ -41,20 +41,28 @@
   &__btn {
     fill: $white;
     cursor: pointer;
-    &_active circle, &_active path {
-      transition: fill .3s ease-in-out;
+    & circle, & path {
+      transition: .3s;
+    }
+    &_active , &_active path {
+      transition: .3s;
       fill: #07A7D8;
+      fill-opacity: 1;
     }
     &_active circle {
       fill: #07A7D8;
       filter: url(#f1);
     }
+    &:hover path, &:hover circle,  {
+      fill: #07A7D8;
+      fill-opacity: 1;
+    }
   }
   &__popup {
     position: absolute;
     right: 20px;
-    top: -27px;
-    max-width: 400px;
+    top: -80px;
+    max-width: 450px;
   }
 
 }
@@ -72,6 +80,9 @@
     @include bgBtnLinkDefault(rgba(7,65,103, 0.7), rgb(2,32,49, 0.9));
     border-radius: 15px;
     position: relative;
+  }
+  &__item {
+    margin-bottom: 20px;
   }
   &__title {
     font-weight: 900;
@@ -92,6 +103,9 @@
   &__body {
     padding: 30px 25px;
   }
+  &__nav {
+    margin-top: 10px;
+  }
   &__footer {
     text-align: center;
   }
@@ -105,5 +119,22 @@
   }
   &__group {
     margin-bottom: 10px;
+  }
+}
+
+.nav-cities {
+  padding: 0 10px !important;
+  &__item {
+    margin: 7px 10px;
+  }
+  &__link {
+    background: darken(#022C43, 2%);
+    border-radius: 10px;
+    color: rgba(255,255,255, .3);
+    font-weight: bold;
+    transition: .3s;
+    &.active {
+      color: rgba(255,255,255, 1);
+    }
   }
 }

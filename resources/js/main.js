@@ -590,66 +590,53 @@ document.addEventListener('DOMContentLoaded', () => {
   (function() {
 
     let tab = document.querySelectorAll('.nj-tabs__title'),
-      groupTabs = document.querySelector('.nj-tabs__group-tabs'),
-      tabInfo = document.querySelectorAll('.nj-tabs__info'),
-      tabInfoFade = document.querySelectorAll('.nj-tabs__info-fade');
+      groupTabs = document.querySelectorAll('.nj-tabs__group-tabs'),
+      tabInfo = document.querySelectorAll('.nj-tabs__info');
 
-
-    if (groupTabs) {
       function showTabInfo(item) {
-        tabInfo.forEach(currentTab => currentTab
-          .classList.remove('nj-tabs__info_show', 'animate__animated', 'animate__fadeInDown', 'animate__fadeInLeft'));
-
-        tabInfo.forEach(() => {
-          if (innerWidth >= 991) {
-            tabInfo[item].classList.add('nj-tabs__info_show', 'animate__animated', 'animate__fadeInDown');
-          } else {
-            tabInfo[item].classList.add('nj-tabs__info_show', 'animate__animated', 'animate__fadeInUp');
-          }
-        });
-
-        tabInfoFade.forEach((currentTab) => {
+        tabInfo.forEach((currentTab) => {
           let dataAnim = currentTab.dataset.animation;
           currentTab.classList.remove('nj-tabs__info_show', 'animate__animated', dataAnim);
         });
 
-
-        tabInfoFade.forEach(() => {
-          let dataAnim = tabInfoFade[item].dataset.animation;
-          tabInfoFade[item].classList.add('nj-tabs__info_show', 'animate__animated', dataAnim);
+        tabInfo.forEach(() => {
+          let dataAnim = tabInfo[item].dataset.animation;
+          tabInfo[item].classList.add('nj-tabs__info_show', 'animate__animated', dataAnim);
         });
-
       }
 
-      groupTabs.addEventListener('click', function(e) {
-        e.preventDefault()
-        let target = e.target,
-          titleTab = target.closest('.nj-tabs__title');
+      groupTabs.forEach((group) => {
+        group.addEventListener('click', function(e) {
+          e.preventDefault();
+          let target = e.target,
+              titleTab = target.closest('.nj-tabs__title');
 
-        let nodeObj = document.querySelector('.nj-tabs__group');
+          let nodeObj = document.querySelector('.nj-tabs__group');
 
-        if (innerWidth <= 991) {
-          nodeObj.scrollIntoView({
-            behavior: "smooth",
-            block:    "nearest"
-          });
-        }
+          if (innerWidth <= 991) {
+            nodeObj.scrollIntoView({
+              behavior: "smooth",
+              block:    "nearest"
+            });
+          }
+
+          if (titleTab) {
+            tab.forEach((item, idx) => {
+
+              if (titleTab === tab[idx]) {
+                tab.forEach(currentTab => currentTab
+                    .classList.remove('nj-tabs__title_active'));
+
+                tab[idx]
+                    .classList.add('nj-tabs__title_active');
+                showTabInfo(idx);
+              }
+            });
 
 
-        if (titleTab) {
-          tab.forEach((item, idx) => {
-            if (titleTab === tab[idx]) {
-              tab.forEach(currentTab => currentTab
-                .classList.remove('nj-tabs__title_active'));
-
-              tab[idx]
-                .classList.add('nj-tabs__title_active');
-              showTabInfo(idx);
-            }
-          });
-        }
+          }
+        });
       });
-    }
 
   })();
   /* END customTabs */

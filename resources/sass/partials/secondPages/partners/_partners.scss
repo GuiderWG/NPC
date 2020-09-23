@@ -1,5 +1,31 @@
 .partners-map {
+  margin-top: -70px;
   padding-bottom: 60px;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  &__top {
+    position: absolute;
+    text-align: center;
+    z-index: 2;
+  }
+  &__title {
+    font-size: 38px;
+    line-height: 42px;
+    font-weight: 600;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+  }
+  &__text {
+    margin-bottom: 50px;
+    font-size: 20px;
+    line-height: 24px;
+    opacity: .9;
+  }
+  &__img {
+    opacity: .3;
+  }
 }
 
 .partners {

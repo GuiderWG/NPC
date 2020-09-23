@@ -502,33 +502,22 @@ document.addEventListener('DOMContentLoaded', function () {
 
   (function () {
     var tab = document.querySelectorAll('.nj-tabs__title'),
-        groupTabs = document.querySelector('.nj-tabs__group-tabs'),
-        tabInfo = document.querySelectorAll('.nj-tabs__info'),
-        tabInfoFade = document.querySelectorAll('.nj-tabs__info-fade');
+        groupTabs = document.querySelectorAll('.nj-tabs__group-tabs'),
+        tabInfo = document.querySelectorAll('.nj-tabs__info');
 
-    if (groupTabs) {
-      var showTabInfo = function showTabInfo(item) {
-        tabInfo.forEach(function (currentTab) {
-          return currentTab.classList.remove('nj-tabs__info_show', 'animate__animated', 'animate__fadeInDown', 'animate__fadeInLeft');
-        });
-        tabInfo.forEach(function () {
-          if (innerWidth >= 991) {
-            tabInfo[item].classList.add('nj-tabs__info_show', 'animate__animated', 'animate__fadeInDown');
-          } else {
-            tabInfo[item].classList.add('nj-tabs__info_show', 'animate__animated', 'animate__fadeInUp');
-          }
-        });
-        tabInfoFade.forEach(function (currentTab) {
-          var dataAnim = currentTab.dataset.animation;
-          currentTab.classList.remove('nj-tabs__info_show', 'animate__animated', dataAnim);
-        });
-        tabInfoFade.forEach(function () {
-          var dataAnim = tabInfoFade[item].dataset.animation;
-          tabInfoFade[item].classList.add('nj-tabs__info_show', 'animate__animated', dataAnim);
-        });
-      };
+    function showTabInfo(item) {
+      tabInfo.forEach(function (currentTab) {
+        var dataAnim = currentTab.dataset.animation;
+        currentTab.classList.remove('nj-tabs__info_show', 'animate__animated', dataAnim);
+      });
+      tabInfo.forEach(function () {
+        var dataAnim = tabInfo[item].dataset.animation;
+        tabInfo[item].classList.add('nj-tabs__info_show', 'animate__animated', dataAnim);
+      });
+    }
 
-      groupTabs.addEventListener('click', function (e) {
+    groupTabs.forEach(function (group) {
+      group.addEventListener('click', function (e) {
         e.preventDefault();
         var target = e.target,
             titleTab = target.closest('.nj-tabs__title');
@@ -553,7 +542,7 @@ document.addEventListener('DOMContentLoaded', function () {
           });
         }
       });
-    }
+    });
   })();
   /* END customTabs */
 
